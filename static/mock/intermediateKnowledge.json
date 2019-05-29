@@ -1,0 +1,31 @@
+{
+  "ret": true,
+  "data": {
+    "knowledge": [{
+      "id": 1,
+      "title": "递归promise用法(用于解决回调地狱等问题)"
+    }, {
+      "id": 2,
+      "title": "apply、call、bind区别"
+    }, {
+      "id": 3,
+      "title": "手写bind"
+    }, {
+      "id": 4,
+      "title": "canvas图"
+    }],
+    "articleList": [{
+      "id": 1,
+      "titleList": "new一个新的promise",
+      "titleList": "promise的三种状态"
+    }, {
+      "id": 2,
+      "titleList": "apply与call的区别",
+      "titleList": "bind与apply、call的区别"
+    }, {
+      "id": 3,
+      "titleList": "介玩应我也没研究呢"
+    }]
+
+  }
+}
