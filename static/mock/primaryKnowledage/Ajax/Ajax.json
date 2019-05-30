@@ -1,0 +1,25 @@
+{
+  "ret": true,
+  "articleList": [{
+    "id": 1,
+    "titleList": "原生ajax",
+    "questions": {
+      "question": "什么是ajax",
+      "answer": "AJAX 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。如下是百度词条定义:"
+    }
+  }, {
+    "id": 2,
+    "titleList": "ajax实现过程",
+    "questions": {
+      "question": "ajax是如何实现的",
+      "answer": "ajax底层使用的是XMLHttpReques"
+    }
+  }, {
+    "id": 3,
+    "titleList": "ajax的封装(jq)",
+    "questions": {
+      "question": "jq封装ajax写法",
+      "answer": "jq封装了ajax的写法使得我们只需要传入url地址与、请求类型、请求信息、并等待回调函数callback将数据返回,使用参数接受返回的数据后即可使用 实例如下："
+    }
+  }]
+}

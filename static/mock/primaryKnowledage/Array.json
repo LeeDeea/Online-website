@@ -1,0 +1,31 @@
+{
+  "ret": true,
+  "articleList": [{
+    "id": 1,
+    "titleList": "数组增加",
+    "questions": {
+      "question": "如push() unshift()",
+      "answer": [{
+        "answer": "如push:向数组第一项添加元素,unshift:向数组最后一项添加元素"
+      }]
+    }
+  }, {
+    "id": 2,
+    "titleList": "数组删除",
+    "questions": {
+      "question": "如pop,shift()",
+      "answer": [{
+        "answer": "pop:删除数组第一项元素,shift:删除数组最后一项元素"
+      }]
+    }
+  }, {
+    "id": 3,
+    "titleList": "数组获取",
+    "questions": {
+      "question": "indexOf，lastIndexof",
+      "answer": [{
+        "answer": "indexof:获取数组中位置"
+      }]
+    }
+  }]
+}
