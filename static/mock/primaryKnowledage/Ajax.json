@@ -4,35 +4,36 @@
     "id": 1,
     "titleList": "原生ajax",
     "questions": {
-      "question": "什么是ajax",
+      "question": "Q.什么是ajax",
       "answer": [{
-        "answer": "ajax是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。如下是百度词条定义",
-        "url": "./static/mock/primaryKnowledage/img/原生ajax.jpg",
-        "explanation": "很简单对吧~"
-      },{
-        "answer": "ajax是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。如下是百度词条定义",
-        "url": "./static/mock/primaryKnowledage/img/原生ajax.jpg",
-        "explanation": ""
+        "answer": "A.ajax是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。",
+        "url": "./static/mock/primaryKnowledage/AjaxImg/原生ajax.jpg",
+        "explanation": "ajax无需重复加载网页，可极大的节约网页性能,如下是百度词条定义:",
+        "ImgExplanation": "<span>$.ajax()开始一个请求，url:请求的地址路径(可相对可绝对)，type:get或者post，dataType:接受返回的数据类型，success:function(res){}:请求成功后接受数据参数res并执行执行的方法</span>"
       }]
     }
   }, {
     "id": 2,
     "titleList": "ajax实现过程",
     "questions": {
-      "question": "ajax是如何实现的",
+      "question": "Q.ajax是如何实现的",
       "answer": [{
-        "answer": "ajax底层使用的是XMLHttpReques",
-        "url": "./static/mock/primaryKnowledage/img/000.jpg"
+        "answer": "A.ajax底层使用的是XMLHttpReques,通过发出请求验证请求是否通过以及接受callback回调函数获取数据",
+        "url": "./static/mock/primaryKnowledage/AjaxImg/ajax是如何实现的.jpg",
+        "explanation": "如下图展示:",
+        "ImgExplanation": "<span>$.ajax()开始一个请求，<span style='color: red;'>url</span>:请求的地址路径(可相对可绝对)，type:get或者post，dataType:接受返回的数据类型，success:function(res){}:请求成功后接受数据参数res并执行执行的方法</span>"
       }]
     }
   }, {
     "id": 3,
     "titleList": "ajax的封装(jq)",
     "questions": {
-      "question": "jq封装ajax写法",
+      "question": "Q.jq封装ajax写法",
       "answer": [{
-        "answer": "jq封装了ajax的写法使得我们只需要传入url地址与、请求类型、请求信息、并等待回调函数callback将数据返回",
-        "url": "./static/mock/primaryKnowledage/img/ajax的封装(jq).jpg"
+        "answer": "A.jq封装了ajax的写法使得我们只需要传入url地址与、请求类型、请求信息、并等待回调函数callback将数据返回",
+        "url": "./static/mock/primaryKnowledage/AjaxImg/ajax的封装(jq).jpg",
+        "explanation": "如下图展示:",
+        "ImgExplanation": "<span>$.ajax()开始一个请求，url:请求的地址路径(可相对可绝对)，type:get或者post，dataType:接受返回的数据类型，success:function(res){}:请求成功后接受数据参数res并执行执行的方法</span>"
       }]
     }
   }]

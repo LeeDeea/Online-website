@@ -1,0 +1,41 @@
+{
+  "ret": true,
+  "articleList": [{
+    "id": 1,
+    "titleList": "原生ajax",
+    "questions": {
+      "question": "Q.什么是ajax",
+      "answer": [{
+        "answer": "A.ajax是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。",
+        "url": "./static/mock/primaryKnowledage/AjaxImg/原生ajax.jpg",
+        "explanation": "ajax无需重复加载网页，可极大的节约网页性能,如下是百度词条定义:",
+        "ImgExplanation": "ajax在前端的使用场景非常的多，由于ajax发送请求的方式相对繁琐故衍生出jQ的$.ajax、vue中的axios等封装形式的ajax"
+      }]
+    }
+  }, {
+    "id": 2,
+    "titleList": "ajax实现过程",
+    "questions": {
+      "question": "Q.ajax是如何实现的",
+      "answer": [{
+        "answer": "A.ajax底层使用的是XMLHttpReques,通过发出请求验证请求是否通过以及接受callback回调函数获取数据",
+        "url": "./static/mock/primaryKnowledage/AjaxImg/ajax是如何实现的.jpg",
+        "explanation": "如下图展示:",
+        "ImgExplanation": "ajax在前端的使用场景非常的多，由于ajax发送请求的方式相对繁琐故衍生出jQ的$.ajax、vue中的axios等封装形式的ajax"
+
+      }]
+    }
+  }, {
+    "id": 3,
+    "titleList": "ajax的封装(jq)",
+    "questions": {
+      "question": "Q.jq封装ajax写法",
+      "answer": [{
+        "answer": "A.jq封装了ajax的写法使得我们只需要传入url地址与、请求类型、请求信息、并等待回调函数callback将数据返回",
+        "url": "./static/mock/primaryKnowledage/AjaxImg/ajax的封装(jq).jpg",
+        "explanation": "如下图展示:",
+        "ImgExplanation": "<span>$.ajax()开始一个请求，url:请求的地址路径(可相对可绝对)，type:get或者post，dataType:接受返回的数据类型，success:function(res){}:请求成功后接受数据参数res并执行执行的方法</span>"
+      }]
+    }
+  }]
+}
