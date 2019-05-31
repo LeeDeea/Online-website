@@ -6,9 +6,13 @@
     "questions": {
       "question": "弹性布局的设计实现与应用场景",
       "answer": [{
-        "answer": "flex弹性布局"
+        "answer": "flex弹性布局由 display:flex属性将标签设置为flex容器",
+        "explanation": "很简单对吧~",
+        "url": ""
       }, {
-        "answer": "flex弹性布局111"
+        "answer": "flex弹性布局111",
+        "explanation": "很简单对吧~",
+        "url": ""
       }]
     }
   }, {
