@@ -1,0 +1,87 @@
+{
+  "ret": true,
+  "articleList": [{
+    "id": 1,
+    "titleList": "弹性布局",
+    "questions": {
+      "question": "弹性布局的设计实现与应用场景",
+      "answer": [{
+        "answer": "flex弹性布局"
+      }, {
+        "answer": "flex弹性布局111"
+      }]
+    }
+  }, {
+    "id": 2,
+    "titleList": "栅格布局",
+    "questions": {
+      "question": "栅格布局的设计实现与应用场景",
+      "answer": [{
+        "answer": "grid栅格布局"
+      }]
+    }
+  }, {
+    "id": 3,
+    "titleList": "流式布局",
+    "questions": {
+      "question": "流式布局的设计实现与应用场景",
+      "answer": [{
+        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+      }]
+    }
+  }, {
+    "id": 4,
+    "titleList": "自适应布局",
+    "questions": {
+      "question": "自适应布局的设计实现与应用场景",
+      "answer": [{
+        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+      }]
+    }
+  }, {
+    "id": 5,
+    "titleList": "圣杯布局",
+    "questions": {
+      "question": "圣杯布局的设计实现与应用场景",
+      "answer": [{
+        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+      }]
+    }
+  }, {
+    "id": 6,
+    "titleList": "双飞翼布局",
+    "questions": {
+      "question": "双飞翼布局的设计实现与应用场景",
+      "answer": [{
+        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+      }]
+    }
+  }, {
+    "id": 7,
+    "titleList": "清除浮动的方式",
+    "questions": {
+      "question": "清除浮动的方式几种方式",
+      "answer": [{
+        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+      }]
+    }
+  }, {
+    "id": 8,
+    "titleList": "元素居中的方式",
+    "questions": {
+      "question": "元素居中的方式",
+      "answer": [{
+        "answer": "居中方式"
+      }]
+    }
+  }, {
+    "id": 9,
+    "titleList": "@media媒体查询",
+    "questions": {
+      "question": "使用media媒体查询做移动端或pc端自适应",
+      "answer": [{
+        "answer": "media媒体查询多用于响应式布局，对于多端应用而言响应式布局可节约开发成本，使得多端适配更容易"
+      }]
+    }
+  }]
+}
