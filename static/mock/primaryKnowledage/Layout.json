@@ -2,17 +2,49 @@
   "ret": true,
   "articleList": [{
     "id": 1,
-    "titleList": "弹性布局",
+    "titleList": "弹性布局（flex:Flexible Box）",
     "questions": {
       "question": "弹性布局的设计实现与应用场景",
       "answer": [{
-        "answer": "flex弹性布局由 display:flex属性将标签设置为flex容器",
-        "explanation": "很简单对吧~",
-        "url": ""
+        "answer": "flex弹性布局是2009年W3C提出的一种新型的布局方式，由display:flex属性将标签设置为flex容器（注:设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。）",
+        "explanation": "使用flex布局可以避免传统盒子模型中使用position,float等带来的如:文档流，或者清除浮动，垂直居中等，flex布局发展至今已得到绝大多数浏览器的支持",
+        "url": "",
+        "ImgExplanation": ""
       }, {
-        "answer": "flex弹性布局111",
-        "explanation": "很简单对吧~",
-        "url": ""
+        "answer": "一、了解flex布局的轴概念",
+        "explanation": "首先要了解当容器的diplay变为flex时，它是如何规定内部空间的",
+        "url": "./static/mock/primaryKnowledage/LayoutImg/轴向.jpg",
+        "ImgExplanation": "定义：flex属性会将容器变为<span class='K_W'>横纵排列</span>共存在两根轴 主轴与交叉轴<br><span class='K_W'>main axis 水平主轴</span>:main start 与 main end<br><span class='K_W'>cross axis 垂直交叉轴</span>：cross start 与 cross end。<br>且项目默认沿主轴方向排列：单个小项目占据的主轴空间为main size，交叉轴空间为cross size。"
+      }, {
+        "answer": "二、flex布局的六种控制属性",
+        "explanation": "1.flex-direction 决定元素在容器内以何种方向排序",
+        "url": "./static/mock/primaryKnowledage/LayoutImg/flex-direction.jpg",
+        "ImgExplanation": "样式：<span class='K_W'>flex-direction:</span>row | row-reverse | column | column-reverse;<br><span class='K_W'>row（默认值）</span>:主轴为水平方向，起点在左端。<br><span class='K_W'>row-reverse</span>:主轴为水平方向，起点在右端。<br><span class='K_W'>column</span>:主轴为垂直方向，起点在上沿。<br><span class='K_W'>column-reverse</span>:主轴为垂直方向，起点在下沿。<br>"
+      }, {
+        "answer": "",
+        "explanation": "2.flex-wrap 决定元素在容器内超出如何换行，如下图（阮一峰老师博客图）",
+        "url": "./static/mock/primaryKnowledage/LayoutImg/flex-wrap.jpg",
+        "ImgExplanation": "样式：<span class='K_W'>flex-wrap:</span>nowrap | wrap | wrap-reverse;<br><span class='K_W'>nowrap（默认）</span>:不换行。<br><span class='K_W'>wrap</span>:换行，第一行在上方。<br><span class='K_W'>wrap-reverse</span>:换行，第一行在下方。<br>"
+      }, {
+        "answer": "",
+        "explanation": "3.flex-flow 该属性为，flex-direction与flex-wrap的缩写形式，默认值为row nowrap",
+        "url": "",
+        "ImgExplanation": ""
+      }, {
+        "answer": "",
+        "explanation": "4.justify-content",
+        "url": "",
+        "ImgExplanation": ""
+      }, {
+        "answer": "",
+        "explanation": "5.",
+        "url": "",
+        "ImgExplanation": ""
+      }, {
+        "answer": "",
+        "explanation": "6.",
+        "url": "",
+        "ImgExplanation": ""
       }]
     }
   }, {
