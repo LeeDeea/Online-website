@@ -1,123 +1,135 @@
 {
   "ret": true,
   "articleList": [{
-    "id": 1,
-    "titleList": "弹性布局（flex:Flexible Box）",
-    "questions": {
-      "question": "弹性布局的设计实现与应用场景",
-      "answer": [{
-        "answer": "flex弹性布局是2009年W3C提出的一种新型的布局方式，由display:flex属性将标签设置为flex容器（注:设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。）",
-        "explanation": "使用flex布局可以避免传统盒子模型中使用position,float等带来的如:文档流，或者清除浮动，垂直居中等，flex布局发展至今已得到绝大多数浏览器的支持",
-        "url": "",
-        "ImgExplanation": ""
-      }, {
-        "answer": "一、了解flex布局的轴概念",
-        "explanation": "首先要了解当容器的diplay变为flex时，它是如何规定内部空间的",
-        "url": "./static/mock/primaryKnowledage/LayoutImg/轴向.jpg",
-        "ImgExplanation": "定义：flex属性会将容器变为<span class='K_W'>横纵排列</span>共存在两根轴 主轴与交叉轴<br><span class='K_W'>main axis 水平主轴</span>：main start 与 main end<br><span class='K_W'>cross axis 垂直交叉轴</span>：cross start 与 cross end。<br>且项目默认沿主轴方向排列：单个小项目占据的主轴空间为main size，交叉轴空间为cross size。"
-      }, {
-        "answer": "二、flex布局的六种控制属性",
-        "explanation": "1.flex-direction 决定元素在容器内以何种方向排序",
-        "url": "./static/mock/primaryKnowledage/LayoutImg/flex-direction.jpg",
-        "ImgExplanation": "样式：<span class='K_W'>flex-direction</span>：row | row-reverse | column | column-reverse;<br><span class='K_W'>row（默认值）</span>：主轴为水平方向，起点在左端。<br><span class='K_W'>row-reverse</span>：主轴为水平方向，起点在右端。<br><span class='K_W'>column</span>：主轴为垂直方向，起点在上沿。<br><span class='K_W'>column-reverse</span>：主轴为垂直方向，起点在下沿。<br>"
-      }, {
-        "answer": "",
-        "explanation": "2.flex-wrap 决定元素在容器内超出如何换行，如下图（阮一峰老师博客图）",
-        "url": "./static/mock/primaryKnowledage/LayoutImg/flex-wrap.jpg",
-        "ImgExplanation": "样式：<span class='K_W'>flex-wrap</span>：nowrap | wrap | wrap-reverse;<br><span class='K_W'>nowrap（默认）</span>：不换行。<br><span class='K_W'>wrap</span>：换行，第一行在上方。<br><span class='K_W'>wrap-reverse</span>：换行，第一行在下方。<br>"
-      }, {
-        "answer": "",
-        "explanation": "3.flex-flow 该属性为，flex-direction与flex-wrap的缩写形式，默认值为row nowrap",
-        "url": "",
-        "ImgExplanation": "样式：<span class='K_W'>flex-flow</span>：row nowrap"
-      }, {
-        "answer": "",
-        "explanation": "4.justify-content（常用） 该属性定义了项目在主轴上（左右）的对齐方式。",
-        "url": "./static/mock/primaryKnowledage/LayoutImg/justify-content.jpg",
-        "ImgExplanation": "样式：<span class='K_W'>justify-content</span>：flex-start | flex-end | center | space-between | space-around;<br><span class='K_W'>flex-start（默认值）</span>：左对齐<br><span class='K_W'>flex-end</span>：右对齐<br><span class='K_W'>center</span>： 居中<br><span class='K_W'>space-between</span>：两端对齐，项目之间的间隔都相等。<br><span class='K_W'>space-around</span>：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。<br>"
-      }, {
-        "answer": "",
-        "explanation": "5.align-items（常用） 该属性规定flex元素的 交叉轴（上下）对齐方式",
-        "url": "./static/mock/primaryKnowledage/LayoutImg/align-items.jpg",
-        "ImgExplanation": "样式：<span class='K_W'>align-items</span>：flex-start | flex-end | center | baseline | stretch;<br><span class='K_W'>flex-start</span>：交叉轴的起点对齐（上对齐）。<br><span class='K_W'>flex-end</span>：交叉轴的终点对齐（下对齐）。<br><span class='K_W'>center</span>：交叉轴的中点对齐（居中对其）。<br><span class='K_W'>baseline</span>：项目的第一行文字的基线对齐。<br><span class='K_W'>stretch（默认值）</span>：如果项目未设置高度或设为auto，将占满整个容器的高度。<br>"
-      }, {
-        "answer": "",
-        "explanation": "6.align-content 该属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性失效。",
-        "url": "./static/mock/primaryKnowledage/LayoutImg/align-content.jpg",
-        "ImgExplanation": "<span class='K_W'>align-content</span>：flex-start | flex-end | center | space-between | space-around | stretch;<br><span class='K_W'>flex-start</span>：与交叉轴的起点对齐<br><span class='K_W'>flex-end</span>：与交叉轴的终点对齐。<br><span class='K_W'>center</span>：与交叉轴的中点对齐。<br><span class='K_W'>space-between</span>：与交叉轴两端对齐，轴线之间的间隔平均分布。<br><span class='K_W'>space-around</span>：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。<br><span class='K_W'>stretch（默认值）</span>：轴线占满整个交叉轴。<br>"
-      }]
+      "id": 1,
+      "titleList": "弹性布局（flex:Flexible Box）",
+      "questions": {
+        "question": "弹性布局的设计实现（阮一峰的博客整理）",
+        "answer": [{
+          "answer": "flex弹性布局是2009年W3C提出的一种新型的布局方式，由display:flex属性将标签设置为flex容器（注:设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。）",
+          "explanation": "使用flex布局可以避免传统盒子模型中使用position,float等带来的如:文档流，或者清除浮动，垂直居中等，flex布局发展至今已得到绝大多数浏览器的支持",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "一、了解flex布局的轴概念",
+          "explanation": "首先要了解当容器的diplay变为flex时，它是如何规定内部空间的",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/轴向.jpg",
+          "ImgExplanation": "定义：flex属性会将容器变为<span class='K_W'>横纵排列</span>共存在两根轴 主轴与交叉轴<br><span class='K_W'>main axis 水平主轴</span>：main start 与 main end<br><span class='K_W'>cross axis 垂直交叉轴</span>：cross start 与 cross end。<br>且项目默认沿主轴方向排列：单个小项目占据的主轴空间为main size，交叉轴空间为cross size。"
+        }, {
+          "answer": "二、flex布局的六种控制属性",
+          "explanation": "1.flex-direction 决定元素在容器内以何种方向排序",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/flex-direction.jpg",
+          "ImgExplanation": "样式：<span class='K_W'>flex-direction</span>：row | row-reverse | column | column-reverse;<br><span class='K_W'>row（默认值）</span>：主轴为水平方向，起点在左端。<br><span class='K_W'>row-reverse</span>：主轴为水平方向，起点在右端。<br><span class='K_W'>column</span>：主轴为垂直方向，起点在上沿。<br><span class='K_W'>column-reverse</span>：主轴为垂直方向，起点在下沿。<br>"
+        }, {
+          "answer": "",
+          "explanation": "2.flex-wrap 决定元素在容器内超出如何换行，如下图（阮一峰老师博客图）",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/flex-wrap.jpg",
+          "ImgExplanation": "样式：<span class='K_W'>flex-wrap</span>：nowrap | wrap | wrap-reverse;<br><span class='K_W'>nowrap（默认）</span>：不换行。<br><span class='K_W'>wrap</span>：换行，第一行在上方。<br><span class='K_W'>wrap-reverse</span>：换行，第一行在下方。<br>"
+        }, {
+          "answer": "",
+          "explanation": "3.flex-flow 该属性为，flex-direction与flex-wrap的缩写形式，默认值为row nowrap",
+          "url": "",
+          "ImgExplanation": "样式：<span class='K_W'>flex-flow</span>：row nowrap"
+        }, {
+          "answer": "",
+          "explanation": "4.justify-content（常用） 该属性定义了项目在主轴上（左右）的对齐方式。",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/justify-content.jpg",
+          "ImgExplanation": "样式：<span class='K_W'>justify-content</span>：flex-start | flex-end | center | space-between | space-around;<br><span class='K_W'>flex-start（默认值）</span>：左对齐<br><span class='K_W'>flex-end</span>：右对齐<br><span class='K_W'>center</span>： 居中<br><span class='K_W'>space-between</span>：两端对齐，项目之间的间隔都相等。<br><span class='K_W'>space-around</span>：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。<br>"
+        }, {
+          "answer": "",
+          "explanation": "5.align-items（常用） 该属性规定flex元素的 交叉轴（上下）对齐方式",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/align-items.jpg",
+          "ImgExplanation": "样式：<span class='K_W'>align-items</span>：flex-start | flex-end | center | baseline | stretch;<br><span class='K_W'>flex-start</span>：交叉轴的起点对齐（上对齐）。<br><span class='K_W'>flex-end</span>：交叉轴的终点对齐（下对齐）。<br><span class='K_W'>center</span>：交叉轴的中点对齐（居中对其）。<br><span class='K_W'>baseline</span>：项目的第一行文字的基线对齐。<br><span class='K_W'>stretch（默认值）</span>：如果项目未设置高度或设为auto，将占满整个容器的高度。<br>"
+        }, {
+          "answer": "",
+          "explanation": "6.align-content 该属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性失效。",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/align-content.jpg",
+          "ImgExplanation": "<span class='K_W'>align-content</span>：flex-start | flex-end | center | space-between | space-around | stretch;<br><span class='K_W'>flex-start</span>：与交叉轴的起点对齐<br><span class='K_W'>flex-end</span>：与交叉轴的终点对齐。<br><span class='K_W'>center</span>：与交叉轴的中点对齐。<br><span class='K_W'>space-between</span>：与交叉轴两端对齐，轴线之间的间隔平均分布。<br><span class='K_W'>space-around</span>：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。<br><span class='K_W'>stretch（默认值）</span>：轴线占满整个交叉轴。<br>"
+        }]
+      }
+    }, {
+      "id": 2,
+      "titleList": "网格布局Grid(网格)",
+      "questions": {
+        "question": "网格布局Grid(网格)的设计实现",
+        "answer": [{
+          "answer": "网格布局能将网页分成简单属性的行和列",
+          "explanation": "当标签被设置为display:grid时，它将成为父容器（Grid Container网格容器），它的子元素将成为（Grid Items 网格项）",
+          "url": "",
+          "ImgExplanation": ""
+
+        }]
+      }
+    },
+    {
+      "id": 3,
+      "titleList": "流式布局",
+      "questions": {
+        "question": "流式布局的设计实现与应用场景",
+        "answer": [{
+          "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+        }]
+      }
+    },
+    {
+      "id": 4,
+      "titleList": "自适应布局",
+      "questions": {
+        "question": "自适应布局的设计实现与应用场景",
+        "answer": [{
+          "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+        }]
+      }
+    },
+    {
+      "id": 5,
+      "titleList": "圣杯布局",
+      "questions": {
+        "question": "圣杯布局的设计实现与应用场景",
+        "answer": [{
+          "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+        }]
+      }
+    },
+    {
+      "id": 6,
+      "titleList": "双飞翼布局",
+      "questions": {
+        "question": "双飞翼布局的设计实现与应用场景",
+        "answer": [{
+          "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+        }]
+      }
+    },
+    {
+      "id": 7,
+      "titleList": "清除浮动的方式",
+      "questions": {
+        "question": "清除浮动的方式几种方式",
+        "answer": [{
+          "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
+        }]
+      }
+    },
+    {
+      "id": 8,
+      "titleList": "元素居中的方式",
+      "questions": {
+        "question": "元素居中的方式",
+        "answer": [{
+          "answer": "居中方式"
+        }]
+      }
+    },
+    {
+      "id": 9,
+      "titleList": "@media媒体查询",
+      "questions": {
+        "question": "使用media媒体查询做移动端或pc端自适应",
+        "answer": [{
+          "answer": "media媒体查询多用于响应式布局，对于多端应用而言响应式布局可节约开发成本，使得多端适配更容易"
+        }]
+      }
     }
-  }, {
-    "id": 2,
-    "titleList": "栅格布局",
-    "questions": {
-      "question": "栅格布局的设计实现与应用场景",
-      "answer": [{
-        "answer": "grid栅格布局"
-      }]
-    }
-  }, {
-    "id": 3,
-    "titleList": "流式布局",
-    "questions": {
-      "question": "流式布局的设计实现与应用场景",
-      "answer": [{
-        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
-      }]
-    }
-  }, {
-    "id": 4,
-    "titleList": "自适应布局",
-    "questions": {
-      "question": "自适应布局的设计实现与应用场景",
-      "answer": [{
-        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
-      }]
-    }
-  }, {
-    "id": 5,
-    "titleList": "圣杯布局",
-    "questions": {
-      "question": "圣杯布局的设计实现与应用场景",
-      "answer": [{
-        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
-      }]
-    }
-  }, {
-    "id": 6,
-    "titleList": "双飞翼布局",
-    "questions": {
-      "question": "双飞翼布局的设计实现与应用场景",
-      "answer": [{
-        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
-      }]
-    }
-  }, {
-    "id": 7,
-    "titleList": "清除浮动的方式",
-    "questions": {
-      "question": "清除浮动的方式几种方式",
-      "answer": [{
-        "answer": "流式布局主要使用百分比作为单位制作网页div或其他容器的宽度达到网页适应的情况"
-      }]
-    }
-  }, {
-    "id": 8,
-    "titleList": "元素居中的方式",
-    "questions": {
-      "question": "元素居中的方式",
-      "answer": [{
-        "answer": "居中方式"
-      }]
-    }
-  }, {
-    "id": 9,
-    "titleList": "@media媒体查询",
-    "questions": {
-      "question": "使用media媒体查询做移动端或pc端自适应",
-      "answer": [{
-        "answer": "media媒体查询多用于响应式布局，对于多端应用而言响应式布局可节约开发成本，使得多端适配更容易"
-      }]
-    }
-  }]
+  ]
 }

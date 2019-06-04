@@ -6,10 +6,6 @@
       "articleList": "Layout.json",
       "title": "布局方式"
     }, {
-      "id": 2,
-      "articleList": "LayoutAuto.json",
-      "title": "自适应方式"
-    }, {
       "id": 3,
       "articleList": "CssTransition.json",
       "title": "基础动画-渐进"
