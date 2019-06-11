@@ -1,0 +1,16 @@
+{
+  "ret": true,
+  "articleList": [{
+    "id": 1,
+    "titleList": "渐进动画",
+    "questions": {
+      "question": "什么是渐进动画",
+      "answer": [{
+        "answer": "渐进动画是c3新属性transition",
+        "explanation": "",
+        "url": "",
+        "ImgExplanation": ""
+      }]
+    }
+  }]
+}
