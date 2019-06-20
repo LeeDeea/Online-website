@@ -49,43 +49,79 @@
       }
     }, {
       "id": 2,
-      "titleList": "三栏布局(1)float",
+      "titleList": "三栏布局(1)浮动",
       "questions": {
         "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
         "answer": [{
-          "answer": "解析：该题目考察布局的基础知识，圣杯布局是相对比较老的题目了，因为现在有更多的布局方式可以实现这样的效果，不过这并不影响它作为经典试题的原因",
+          "answer": "解析：该题目考察布局的基础知识，圣杯1布局是相对比较老的题目了，因为现在有更多的布局方式可以实现这样的效果，不过这并不影响它作为经典试题的原因",
           "explanation": "如下图所示：左右300px中间自适应",
           "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
-          "ImgExplanation": "圣杯布局来源于文章<a href='#'>In Search of the Holy Grail</a>为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+          "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
         }, {
           "answer": "1.使用float浮动布局",
           "explanation": "首先我们使用左右浮动的效果达成三栏布局：代码如下（注意标签语义化）",
-          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯-dom.jpg",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-dom.jpg",
           "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
         }, {
           "answer": "",
           "explanation": "",
-          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯-init.jpg",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
           "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式</span><br>初始化高度<span class='K_W'>100px</span>"
         }, {
           "answer": "",
           "explanation": "",
-          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯-style.jpg",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-style.jpg",
           "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>左右设置浮动，中间不设置宽度"
         }, {
           "answer": "延展问题：",
           "explanation": "倘若我们侧边栏的高度不一致，则float布局会存在一定的问题，如图所示",
-          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯-problem.jpg",
-          "ImgExplanation": "我们发现当左边高度减少时，中间自适应的高度向左侵蚀了，原因是:<span class='K_W_C'>左边红色区域的float会使左边区域脱离文档流</span>"
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-problem.jpg",
+          "ImgExplanation": "我们发现当<b>左边高度减少时</b>，中间自适应的高度向左侵蚀了，原因是:<span class='K_W_C'>左边红色区域的float会使左边区域脱离文档流</span>"
         }, {
           "answer": "解决建议：",
-          "explanation": "这里我们选择对中间auto区域进行BFC设置，何为BFC，BFC如何设置请移步该分类下的另一文章",
+          "explanation": "这里我们选择对中间auto区域进行BFC设置。那么何为BFC？BFC如何设置？请移步该分类下的另一文章",
           "url": "",
-          "ImgExplanation": ""
+          "ImgExplanation": "常见BFC触发<br>oveflow:不等于默认"
         }]
       }
-    },
-    {
+    }, {
+      "id": 3,
+      "titleList": "三栏布局(2)定位",
+      "questions": {
+        "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
+        "answer": [{
+          "answer": "除float浮动布局，我们可以尝试使用position定位来解决这样的问题",
+          "explanation": "如下图所示：左右300px中间自适应",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
+          "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+        }, {
+          "answer": "1.使用position绝对定位",
+          "explanation": "首先我们为父元素设置relative属性，为子元素设置absolute：代码如下（注意标签语义化）",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-dom.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
+        }, {
+          "answer": "",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
+        }, {
+          "answer": "",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-style.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级relative，子元素绝对定位"
+        }, {
+          "answer": "延展问题：",
+          "explanation": "倘若我们侧边栏的高度不一致，则position布局会存在一定的问题，如图所示",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-problem.jpg",
+          "ImgExplanation": "我们的布局后边其实是有一串123456的数字的，但是并没有显示<br>原因是:<span class='K_W_C'>position会使得元素脱离文档流从而覆盖了下方的字符串123456</span>"
+        }, {
+          "answer": "解决建议：",
+          "explanation": "这里建议在position的后方添加一个与position元素等高的空白块元素",
+          "url": "",
+          "ImgExplanation": "但这样的作法会增添额外的DOM"
+        }]
+      }
+    }, {
       "id": 7,
       "titleList": "清除浮动的方式",
       "questions": {

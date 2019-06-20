@@ -18,7 +18,7 @@
     "questions": {
       "question": "原生ajax是如何实现的",
       "answer": [{
-        "answer": "ajax底层使用的是<span class='K_W'>XMLHttpReques</span>,通过发出请求验证请求是否通过以及接受callback回调函数获取数据",
+        "answer": "ajax底层使用的是XMLHttpReques,通过发出请求验证请求是否通过以及接受callback回调函数获取数据",
         "explanation": "下图为原生ajax的:get方法与post方法实现",
         "url": "./static/mock/primaryKnowledage/AjaxImg/ajax是如何实现的.jpg",
         "ImgExplanation": "<span class='K_W'>get与post:</span>是两种获取数据的方式，post相对更安全<br>ajax有三种状态<br><span class='K_W'> open:</span>打开端口确定请求方法，请求路径，请求是否为异步<br><span class='K_W'>readyState:</span>请求等待，这一步的if出现错误则判定是否为网络或服务器端问题<br><span class='K_W'>send:</span>发送本次请求<br><span class='K_W'>fn.call (this,xhr.responseText):</span>数据获取后调用外部fn方法"

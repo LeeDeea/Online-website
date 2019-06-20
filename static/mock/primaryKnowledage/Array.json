@@ -29,5 +29,17 @@
         "ImgExplanation": ""
       }]
     }
+  }, {
+    "id": 3,
+    "titleList": "数组平拍",
+    "questions": {
+      "question": "请对数组进行数组平拍",
+      "answer": [{
+        "answer": "",
+        "explanation": "思路，新建数组，遍历传入数组值，值不在新数组中就push进该新数组中",
+        "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍.jpg",
+        "ImgExplanation": ""
+      }]
+    }
   }]
 }
