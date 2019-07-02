@@ -1,0 +1,40 @@
+{
+  "ret": true,
+  "articleList": [{
+    "id": 1,
+    "titleList": "网络协议状态码",
+    "questions": {
+      "question": "请说出什么是状态码？常见的状态码有哪些？",
+      "answer": [{
+        "answer": "",
+        "explanation": "",
+        "url": "",
+        "ImgExplanation": ""
+      }]
+    }
+  }, {
+    "id": 2,
+    "titleList": "http1.x、http2.x、https",
+    "questions": {
+      "question": "请描述http1.x,http2.x,https之间的区别",
+      "answer": [{
+        "answer": "",
+        "explanation": "",
+        "url": "",
+        "ImgExplanation": ""
+      }]
+    }
+  }, {
+    "id": 3,
+    "titleList": "url解析",
+    "questions": {
+      "question": "请描述用户访问url时发生了那些事情？",
+      "answer": [{
+        "answer": "",
+        "explanation": "",
+        "url": "",
+        "ImgExplanation": ""
+      }]
+    }
+  }]
+}

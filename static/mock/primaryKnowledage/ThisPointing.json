@@ -4,10 +4,10 @@
     "id": 1,
     "titleList": "this指向",
     "questions": {
-      "question": "this指向问题",
+      "question": "this指向",
       "answer": [{
         "answer": "this指向问题诸如闭包，函数域等等",
-        "explanation": "",
+        "explanation": "this指向当前函数的作用于，如window，function等通过存储this指向（如：var that = this）可在函数中使用访问其他函数作用于（如：that.data）",
         "url": "",
         "ImgExplanation": ""
       }]

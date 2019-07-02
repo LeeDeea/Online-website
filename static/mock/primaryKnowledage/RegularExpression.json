@@ -4,10 +4,22 @@
     "id": 1,
     "titleList": "正则表达式的使用",
     "questions": {
-      "question": "正则表达式极大的简化了判断与筛选的代码数量",
+      "question": "正则表达式",
       "answer": [{
-        "answer": "诸如匹配电话，邮箱，注册账号等等",
+        "answer": "正则表达式极大的简化了判断与筛选的代码数量,诸如匹配电话，邮箱，注册账号等等",
         "explanation": "",
+        "url": "",
+        "ImgExplanation": ""
+      }]
+    }
+  }, {
+    "id": 2,
+    "titleList": "正则表达式-电话号码",
+    "questions": {
+      "question": "使用正则表达式筛选电话号码",
+      "answer": [{
+        "answer": "下面这段代码用于验证是否符合电话号码规范",
+        "explanation": "if(!(<span class='K_W'>/^1[3456789]\\d{9}$/.test(phone)</span>)) { alert(\"请输入正确的电话号码~\")}",
         "url": "",
         "ImgExplanation": ""
       }]
