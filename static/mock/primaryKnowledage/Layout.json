@@ -63,15 +63,20 @@
           "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-dom.jpg",
           "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
         }, {
-          "answer": "",
+          "answer": "2.对项目进行初始化样式",
           "explanation": "",
           "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
           "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式</span><br>初始化高度<span class='K_W'>100px</span>"
         }, {
-          "answer": "",
+          "answer": "3.添加浮动样式",
           "explanation": "",
           "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-style.jpg",
           "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>左右设置浮动，中间不设置宽度"
+        }, {
+          "answer": "4.成果展示",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/float-complete.jpg",
+          "ImgExplanation": "利用浮动将左右的<span class='K_W'>元素</span>浮动,其实在红色背景下有着黄色背景部分，这里的文字没有被覆盖可以理解为文字与红色区域处于较高的层级"
         }, {
           "answer": "延展问题：",
           "explanation": "倘若我们侧边栏的高度不一致，则float布局会存在一定的问题，如图所示",
@@ -90,7 +95,7 @@
       "questions": {
         "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
         "answer": [{
-          "answer": "除float浮动布局，我们可以尝试使用position定位来解决这样的问题",
+          "answer": "解析：除float浮动布局，我们可以尝试使用position定位来解决这样的问题",
           "explanation": "如下图所示：左右300px中间自适应",
           "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
           "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
@@ -100,15 +105,20 @@
           "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-dom.jpg",
           "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
         }, {
-          "answer": "",
+          "answer": "2.对项目进行初始化样式",
           "explanation": "",
           "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
           "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
         }, {
-          "answer": "",
+          "answer": "3.添加定位样式",
           "explanation": "",
           "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-style.jpg",
           "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级relative，子元素绝对定位"
+        }, {
+          "answer": "4.成果展示",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/position-complete.jpg",
+          "ImgExplanation": "通过使用定位布局使得<span class='K_W'>元素</span>脱离文档流，这样做:<br><span class='K_W'>好处</span>是不会像float一样黄色区域向左侵蚀<br><span class='K_W'>坏处</span>是使得元素脱离了文档流有可能影响接下来的布局"
         }, {
           "answer": "延展问题：",
           "explanation": "倘若我们侧边栏的高度不一致，则position布局会存在一定的问题，如图所示",
@@ -119,6 +129,112 @@
           "explanation": "这里建议在position的后方添加一个与position元素等高的空白块元素",
           "url": "",
           "ImgExplanation": "但这样的作法会增添额外的DOM"
+        }]
+      }
+    }, {
+      "id": 4,
+      "titleList": "三栏布局(3)table",
+      "questions": {
+        "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
+        "answer": [{
+          "answer": "解析:如果考虑到兼容性问题又不想使页面中出现浮动或定位的布局方式可以考虑使用table布局（虽然table目前处于摒弃阶段，但仍然适用，并且兼容性最好）",
+          "explanation": "如下图所示：左右300px中间自适应",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
+          "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+        }, {
+          "answer": "1.使用table表格布局",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯3-dom.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
+        }, {
+          "answer": "2.对项目进行初始化样式",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
+        }, {
+          "answer": "3.添加table样式",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯3-style.jpg",
+          "ImgExplanation": "我们为父元素设置<span class='K_W'>display：table</span>属性，并对下属的div子元素设置了<span class='K_W'>display：table-cell</span>属性，以此达到三栏布局效果"
+        }, {
+          "answer": "4.成果展示",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/table-complete.jpg",
+          "ImgExplanation": "表格布局的<span class='K_W'>兼容性是布局方式中最好的</span>在早期前端开发时利用的最多的就是表格布局，这也是为什么table布局兼容性极好"
+        }, {
+          "answer": "延展问题：",
+          "explanation": "虽然table布局兼容性很好，但是会有一些设计上的小问题，如图",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯3-problem.jpg",
+          "ImgExplanation": "对<span class='K_W'>左中右</span>任意元素设置高度时，会使得三个元素的高度统一为最大高度。（图中为黄色区域设置了200px的高度，使得红色与蓝色区域的100px高度显示为200px）"
+        }]
+      }
+    }, {
+      "id": 5,
+      "titleList": "三栏布局(4)flex",
+      "questions": {
+        "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
+        "answer": [{
+          "answer": "解析：flex布局近几年兴起，得到了浏览器较好的支持，可以选择尝试使用flex布局",
+          "explanation": "如下图所示：左右300px中间自适应",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
+          "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+        }, {
+          "answer": "1.使用flex布局",
+          "explanation": "首先我们为父元素设置flex属性，代码如下（注意标签语义化）",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯4-dom.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
+        }, {
+          "answer": "2.对项目进行初始化样式",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
+        }, {
+          "answer": "3.添加flex样式",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯4-style.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级成为flex，为子元素两侧设置宽度，中间利用<span class='K_W'>flex:1</span>实现自适应撑开高度"
+        }, {
+          "answer": "4.成果展示",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/flex-complete.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级成为flex，为子元素两侧设置宽度，中间利用<span class='K_W'>flex:1</span>实现自适应撑开高度"
+        }, {
+          "answer": "延展问题：",
+          "explanation": "flex布局不会像浮动与定位一样出现流的一些情况，相对比较稳定，即使改变了左中右的高度也不会造成侵蚀或覆盖",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/flex-problem.jpg",
+          "ImgExplanation": ""
+        }]
+      }
+    }, {
+      "id": 6,
+      "titleList": "三栏布局(5)grid",
+      "questions": {
+        "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
+        "answer": [{
+          "answer": "解析：grid布局在主流浏览器的表现十分优秀，但在低版本浏览器下得不到很好的支持，grid布局的优势在于代码干练易懂",
+          "explanation": "如下图所示：左右300px中间自适应",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
+          "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+        }, {
+          "answer": "1.使用grid网格布局",
+          "explanation": "首先我们对父元素进行display：grid属性设置",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯5-dom.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
+        }, {
+          "answer": "2.对项目进行初始化样式",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
+        }, {
+          "answer": "3.添加grid样式",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯5-style.jpg",
+          "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级relative，子元素绝对定位"
+        }, {
+          "answer": "4.成果展示",
+          "explanation": "",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/grid-complete.jpg",
+          "ImgExplanation": "值得一提的是grid布局的兼容性正在被改善，不久的将来前端布局与兼容性将会极大的提升"
         }]
       }
     }, {
