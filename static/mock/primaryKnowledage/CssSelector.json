@@ -12,5 +12,17 @@
         "ImgExplanation": ""
       }]
     }
+  }, {
+    "id": 1,
+    "titleList": "选择器优先级",
+    "questions": {
+      "question": "css的选择器优先级是如何判定的",
+      "answer": [{
+        "answer": "",
+        "explanation": "",
+        "url": "",
+        "ImgExplanation": ""
+      }]
+    }
   }]
 }

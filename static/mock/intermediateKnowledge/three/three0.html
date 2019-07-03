@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="./three-min.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+
+</body>
+<script>
+	// var camera, scene, renderer;
+	// var geometry, material, mesh;
+	// init();
+	// animate();
+	// function init() {
+	// 	camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.01, 10 );
+	// 	camera.position.z = 1;
+	// 	scene = new THREE.Scene();
+	// 	geometry = new THREE.BoxGeometry( 0.3, 0.5, 0.3 );
+	// 	material = new THREE.MeshNormalMaterial();
+	// 	mesh = new THREE.Mesh( geometry, material );
+	// 	scene.add( mesh );
+	// 	renderer = new THREE.WebGLRenderer( { antialias: true } );
+	// 	renderer.setSize( window.innerWidth, window.innerHeight );
+	// 	document.body.appendChild( renderer.domElement );
+	// }
+	// function animate() {
+	// 	requestAnimationFrame( animate );
+	// 	mesh.rotation.x += 0.01;
+	// 	mesh.rotation.y += 0.02;
+	// 	renderer.render( scene, camera );
+	// }
+
+
+	//three.js中，渲染物体需要三个组件，场景（scene）、相机（camera）、渲染器（renderer）
+	//创建场景
+	var scene = new THREE.Scene();
+	//创建相机并设置相机高度
+	var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.01, 10);
+	//创建渲染器
+	var renderer = new THREE.WebGLRenderer();
+	//设置渲染器尺寸
+	renderer.setSize(window.innerWidth, window.innerHeight);
+	//将渲染的domElement挂在到页面body之上
+	document.body.appendChild(renderer.domElement);
+	//创建一个1：1：1的 几何 立方体
+	var geometry = new THREE.CubeGeometry(1, 1, 1);
+	// 新建网格基础材料 为其增添银色（0xC0C0C0）
+	var material = new THREE.MeshBasicMaterial({ color: 0xC0C0C0 });
+	// 新建网格，将几何体与几何体颜色挂载上
+	var cube = new THREE.Mesh(geometry, material);
+	//将创建好的网格 挂载到场景中
+	scene.add(cube);
+	//设置相机的z轴
+	camera.position.z = 5;
+	function render() {
+		//物体x轴旋转
+		cube.rotation.x += 0.01;
+		//物体y轴旋转
+		cube.rotation.y += 0.01;
+		//结合场景与相机，渲染器进行渲染操作
+		renderer.render(scene, camera);
+		//requestAnimationFrame表示下一帧执行render函数，并非return 所以该函数可以放在第一行
+		requestAnimationFrame(render);
+	}
+	render();
+</script>
+
+</html>

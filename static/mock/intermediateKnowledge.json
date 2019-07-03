@@ -1,0 +1,18 @@
+{
+  "ret": true,
+  "data": {
+    "knowledge": [{
+      "id": 3,
+      "articleList": "callApplyBind.json",
+      "title": "apply、call、bind"
+    }, {
+      "id": 4,
+      "articleList": "writeBind.json",
+      "title": "手写bind"
+    }, {
+      "id": 5,
+      "articleList": "gitConflict.json",
+      "title": "git代码"
+    }]
+  }
+}

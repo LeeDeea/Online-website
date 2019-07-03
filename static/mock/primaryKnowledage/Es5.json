@@ -1,0 +1,40 @@
+{
+  "ret": true,
+  "articleList": [{
+    "id": 1,
+    "titleList": "严格模式",
+    "questions": {
+      "question": "什么是严格模式",
+      "answer": [{
+        "answer": "严格模式，限制一些用法，'use strict';",
+        "explanation": "",
+        "url": "",
+        "ImgExplanation": ""
+      }]
+    }
+  }, {
+    "id": 2,
+    "titleList": "Array增加方法",
+    "questions": {
+      "question": "es5中array增加哪些方法",
+      "answer": [{
+        "answer": "",
+        "explanation": "增加了every、some 、forEach、filter 、indexOf、lastIndexOf、isArray、map、reduce、reduceRight方法<br>PS： 还有其他方法 Function.prototype.bind、String.prototype.trim、Date.now",
+        "url": "",
+        "ImgExplanation": ""
+      }]
+    }
+  }, {
+    "id": 3,
+    "titleList": "Object方法",
+    "questions": {
+      "question": "es5中Object增加哪些方法",
+      "answer": [{
+        "answer": "",
+        "explanation": "Object.getPrototypeOf<br>Object.create<br>Object.getOwnPropertyNames<br>Object.defineProperty<br>Object.getOwnPropertyDescriptor<br>Object.defineProperties<br>Object.keys<br>Object.preventExtensions / Object.isExtensible<br>Object.seal / Object.isSealed<br>Object.freeze / Object.isFrozen<br>",
+        "url": "",
+        "ImgExplanation": ""
+      }]
+    }
+  }]
+}
