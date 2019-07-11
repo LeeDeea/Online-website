@@ -71,12 +71,12 @@
         "answer": "1.选择本地代码强制覆盖，放弃pull下来的代码",
         "explanation": "使用如下的三个命令",
         "url": "",
-        "ImgExplanation": " git stashgit pull origin mastergit stash pop"
+        "ImgExplanation": " git stash<br>git pull origin master<br>git stash pop"
       }, {
         "answer": "2.选择放弃本地修改，回退至上一版本",
         "explanation": "使用如下两个命令",
         "url": "",
-        "ImgExplanation": "git reset --hardgit pull origin master"
+        "ImgExplanation": "git reset --hard<br>git pull origin master"
       }]
     }
   }, {
