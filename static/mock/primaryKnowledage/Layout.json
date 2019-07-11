@@ -308,7 +308,7 @@
           {
             "answer": "3.利用伪类：after与zoom",
             "explanation": "对父元素设置伪类，代码如下",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/clear-float-2.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/clear-float-3.jpg",
             "ImgExplanation": "<span class='K_W'>优点</span>：类似方法2，目前使用较多的清除浮动方法，IE8支持：after属性，配合zoom可兼容IE6、IE7<br><span class='K_W'>缺点</span>：代码较多，需伪类after与zoom同用才可以兼容多数浏览器，不容易理解"
           }, {
             "answer": "其实还有许多的方法比如，固定父元素高度、父元素一起浮动。但是这些方法会带来新的问题，作为理解就好。",
