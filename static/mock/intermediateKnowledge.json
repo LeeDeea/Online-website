@@ -7,27 +7,15 @@
       "title": "apply、call、bind"
     }, {
       "id": 4,
-      "articleList": "writeBind.json",
-      "title": "手写bind"
-    }, {
-      "id": 5,
       "articleList": "gitConflict.json",
       "title": "git代码"
     }, {
+      "id": 5,
+      "articleList": "vue.json",
+      "title": "vue"
+    }, {
       "id": 6,
-      "articleList": "vuex.json",
-      "title": "vuex"
-    }, {
-      "id": 7,
-      "articleList": "vueLifeCycle.json",
-      "title": "vue生命周期"
-    }, {
-      "id": 8,
-      "articleList": "vuePassValue.json",
-      "title": "vue传值"
-    }, {
-      "id": 9,
-      "articleList": "vueSafe.json",
+      "articleList": "httpSafe.json",
       "title": "网络安全"
     }]
   }
