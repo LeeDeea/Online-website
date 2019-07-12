@@ -6,8 +6,8 @@
       "questions": {
         "question": "什么是vuex？vuex能做什么？",
         "answer": [{
-          "answer": "vuex官方定义为公用存储仓库，用于解决组件间复杂传值的一种解决方案<br>To be continued...",
-          "explanation": "",
+          "answer": "vuex官方定义为公用存储仓库，用于解决组件间复杂传值的一种解决方案",
+          "explanation": "To be continued...",
           "url": "",
           "ImgExplanation": ""
         }]
@@ -19,8 +19,8 @@
       "questions": {
         "question": "vue生命周期总结",
         "answer": [{
-          "answer": "本章节为大家梳理vue中生命周期的触发<br>To be continued...",
-          "explanation": "",
+          "answer": "本章节为大家梳理vue中生命周期的触发",
+          "explanation": "To be continued...",
           "url": "",
           "ImgExplanation": ""
         }]
@@ -40,26 +40,26 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "titleList": "new Vue做了什么",
       "questions": {
         "question": "new Vue实例，Vue在底层做了什么？",
         "answer": [{
-          "answer": "在new Vue 的时候，vue底层会做许多的初始化操作，如vue类的初始化，数据整合为$options,改变this指向_data等等<br>To be continued...",
-          "explanation": "",
+          "answer": "在new Vue 的时候，vue底层会做许多的初始化操作，如vue类的初始化，数据整合为$options,改变this指向_data等等",
+          "explanation": "To be continued...",
           "url": "",
           "ImgExplanation": ""
         }]
       }
     },
     {
-      "id": 3,
+      "id": 5,
       "titleList": "vue中key值",
       "questions": {
         "question": "标签中，加不加key值的影响",
         "answer": [{
-          "answer": "由于vue中为提升渲染效率，会将同一dom进行innerText复用dom，如果为标签附加key值会提供唯一性，可避免复用dom带来的如动画消失的影响<br>To be continued...",
-          "explanation": "",
+          "answer": "由于vue中为提升渲染效率，会将同一dom进行innerText复用dom，如果为标签附加key值会提供唯一性，可避免复用dom带来的如动画消失的影响",
+          "explanation": "To be continued...",
           "url": "",
           "ImgExplanation": ""
         }]
