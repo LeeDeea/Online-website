@@ -323,10 +323,25 @@
       "id": 8,
       "titleList": "元素居中的方式",
       "questions": {
-        "question": "元素居中的方式",
+        "question": "居中的方式？",
         "answer": [{
-          "answer": "",
-          "explanation": "",
+          "answer": "1.绝对定位position",
+          "explanation": "利用绝对定位设置50%宽高位置，减去元素本身的一半宽高即可，如：left：50%; margin-left:(宽度/2)px;或者transform: translate(-50%, -50%);",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "2.利用元素的margin",
+          "explanation": "利用元素margin: 0 auto属性，实现元素水平居中",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "3.弹性布局flex",
+          "explanation": " 设置父元素为display:flex;<br>justify-content: center;横向对齐方式<br>align-items：center 纵向对齐方式",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "4.对于文字使用line-height",
+          "explanation": "设置元素的line-height:元素高度实现元素垂直居中",
           "url": "",
           "ImgExplanation": ""
         }]
@@ -336,12 +351,12 @@
       "id": 9,
       "titleList": "@media媒体查询",
       "questions": {
-        "question": "使用media媒体查询做移动端或pc端自适应",
+        "question": "使用media媒体查询做移动端自适应",
         "answer": [{
-          "answer": "media媒体查询多用于响应式布局，对于多端应用而言响应式布局可节约开发成本，使得多端适配更容易",
-          "explanation": "",
-          "url": "",
-          "ImgExplanation": ""
+          "answer": "",
+          "explanation": "media媒体查询多用于响应式布局，对于多端应用而言响应式布局可节约开发成本，使得多端适配更容易",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/@media.jpg",
+          "ImgExplanation": "css中使用@media可进行媒体查询操作，将不同分辨率下的代码分离实现适配"
         }]
       }
     },
@@ -351,10 +366,10 @@
       "questions": {
         "question": "什么是BFC，BFC的作用是什么",
         "answer": [{
-          "answer": "BFC(块儿级格式化上下文)",
-          "explanation": "",
+          "answer": "定义：BFC(块儿级格式化上下文)",
+          "explanation": "一个块格式化上下文（block formatting context） 是Web页面的可视化CSS渲染出的一部分。它是块级盒布局出现的区域，也是浮动层元素进行交互的区域。<br>一个块格式化上下文由以下之一创建： <br><br>根元素或其它包含它的元素<br>浮动元素(元素的 float 不是 none)<br>绝对定位元素(元素具有 position 为 absolute 或 fixed)<br>内联块(元素具有 display: inline - block)<br>表格单元格(元素具有 display: table - cell， HTML表格单元格默认属性)<br>表格标题(元素具有 display: table - caption, HTML表格标题默认属性)<br>具有overflow 且值不是 visible 的块元素<br>column - span: all 应当总是会创建一个新的格式化上下文， 即便具有 column - span: all 的元素并不被包裹在一个多列容器中。<br><br>一个块格式化上下文包括创建它的元素内部所有内容， 除了被包含于创建新的块级格式化上下文的后代元素内的元素。 ",
           "url": "",
-          "ImgExplanation": ""
+          "ImgExplanation": "通常，我们会利用<span class='K_W'>overflow:不为默认;</span>属性去约束float浮动带来的影响，<br>或者是<span class='K_W'>box-sizing:border-box;</span>解决垂直方向margin重叠问题。"
         }]
       }
     }
