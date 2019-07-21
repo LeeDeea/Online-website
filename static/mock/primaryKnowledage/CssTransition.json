@@ -2,15 +2,41 @@
   "ret": true,
   "articleList": [{
     "id": 1,
-    "titleList": "渐进动画",
+    "titleList": "渐变",
     "questions": {
-      "question": "什么是渐进动画",
+      "question": "CSS3中渐变的实现",
       "answer": [{
-        "answer": "渐进动画是c3新属性transition",
-        "explanation": "",
-        "url": "",
+        "answer": "渐变(gradients)是css3中的新属性，使用它会让背景颜色的过渡显示更加平滑",
+        "explanation": "CSS3 定义了两种类型的渐变（gradients）：",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_top.png",
         "ImgExplanation": ""
+      }, {
+        "answer": "1.线性渐变（Linear Gradients）- 向下/向上/向左/向右/对角方向",
+        "explanation": "渐变的默认方向为<span class='K_W'>自上而下</span>。",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear.png",
+        "ImgExplanation": "background:<span class='K_W'> linear-gradient(red, blue); </span>/*自上而下(默认)*/<br>background:<span class='K_W'> linear-gradient(to right, red , blue);</span>/*自左向右*/<br>background:<span class='K_W'> linear-gradient(to bottom right, red , blue);</span>/*对角方式*/<br>渐变方向：<span class='K_W'>to bottom</span><span class='K_W'>to top</span><span class='K_W'>to right</span><span class='K_W'>to left</span><span class='K_W'>to bottom right</span><span class='K_W'>to left top</span>"
+      }, {
+        "answer": "1.1线性渐变可以使用角度（0deg），来达成任意方向的变化",
+        "explanation": "但是，请注意很多浏览器(Chrome,Safari,fiefox等)的使用了旧的标准，即 0deg 将创建一个从左到右的渐变，90deg 将创建一个从下到上的渐变。换算公式 90 - x = y 其中 x 为标准角度，y为非标准角度。",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear_deg.jpg",
+        "ImgExplanation": "background: <span class='K_W'>linear-gradient(180deg, red, blue);</span>"
+      }, {
+        "answer": "1.2多颜色节点",
+        "explanation": "渐变使用可是添加多个颜色，十分方便",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear_node.jpg",
+        "ImgExplanation": "background: <span class='K_W'>linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); </span>"
+      }, {
+        "answer": "1.3透明度（transparent）",
+        "explanation": "渐变使用可是添加多个颜色，十分方便",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear_ transparent.jpg",
+        "ImgExplanation": "background: <span class='K_W'>linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));</span>"
       }]
     }
-  }]
+  }],
+  "test": {
+    "answer": "2.径向渐变（Radial Gradients）- 由它们的中心定义",
+    "explanation": "",
+    "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_top.png",
+    "ImgExplanation": ""
+  }
 }

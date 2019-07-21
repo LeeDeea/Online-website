@@ -6,14 +6,24 @@
     "questions": {
       "question": "css的选择器有哪些种类",
       "answer": [{
-        "answer": "标签 id class等",
+        "answer": "1.标签选择器",
+        "explanation": "",
+        "url": "",
+        "ImgExplanation": ""
+      }, {
+        "answer": "2.id选择器",
+        "explanation": "",
+        "url": "",
+        "ImgExplanation": ""
+      }, {
+        "answer": "3.class选择器",
         "explanation": "",
         "url": "",
         "ImgExplanation": ""
       }]
     }
   }, {
-    "id": 1,
+    "id": 2,
     "titleList": "选择器优先级",
     "questions": {
       "question": "css的选择器优先级是如何判定的",
