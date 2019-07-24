@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<style>
+  #know {
+    width: 200px;
+    height: 200px
+  }
+</style>
+
+<body>
+  <div>
+    <textarea id="know" shape="20" coords="20" href="" alt=""></textarea>
+	<input id="addKW">
+  </div>
+  <input onclick="btn()" type="button" value="提交">
+  <input onclick="deleteKW()" type="button" value="删除关键字">
+</body>
+<script scorde>
+  function deleteKW() {
+    var know = document.getElementById('addKW')
+	var knowVal = know.value;
+	var knows = document.getElementById('know')
+	knowVal = knowVal.replace(/<span class='K_W'>/,'');
+	knowVal = knowVal.replace(/<\/span>/,'');
+    knows.value += knowVal;
+    console.log(`<span class='K_W'>${knowVal}</span>`);
+  }
+  function btn() {
+    var know = document.getElementById('know')
+    var knowVal = know.value;
+    var knowValNoN = knowVal.replace(/\n/g, "<br>")
+    var knowValNoPoint = knowValNoN.replace(/\n/g, "<br>")
+    var finish = knowValNoPoint.replace(/\s/g, "");
+    console.log(finish)
+  }
+</script>
+
+</html>

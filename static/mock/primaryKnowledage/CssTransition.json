@@ -30,6 +30,48 @@
         "explanation": "渐变使用可是添加多个颜色，十分方便",
         "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear_ transparent.jpg",
         "ImgExplanation": "background: <span class='K_W'>linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));</span>"
+      }, {
+        "answer": "1.4重复性渐变",
+        "explanation": "渐变使用可是添加多个颜色，十分方便",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear_ transparent.jpg",
+        "ImgExplanation": "background: <span class='K_W'>linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));</span>"
+      }, {
+        "answer": "2.径向渐变",
+        "explanation": "至少两种颜色节点，自内向外渐变，由于颜色的选择使得处于中间的一个颜色或多个颜色呈原型、或椭圆形",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_radial.jpg",
+        "ImgExplanation": "background: <span class='K_W'>radial-gradient(red, yellow, green);</span>/*标准代码*/"
+      }, {
+        "answer": "2.1径向渐变的节点分布",
+        "explanation": "我们可以灵活的改变颜色所占的百分比",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_radial_percentage.jpg",
+        "ImgExplanation": "background: <span class='K_W'>radial-gradient(red 5%, green 15%, blue 60%);</span>/*占比*/"
+      }, {
+        "answer": "2.2径向渐变的形状",
+        "explanation": "径向渐变的形状可以有圆形(circle)与椭圆形(ellipse)",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_radial_circle.jpg",
+        "ImgExplanation": "background: <span class='K_W'>radial-gradient(circle, green 15%, blue 60%);</span>/*控制形状*/"
+      }]
+    }
+  }, {
+    "id": 2,
+    "titleList": "过渡",
+    "questions": {
+      "question": "二级菜单高度auto，过渡失效如何解决",
+      "answer": [{
+        "answer": "元素高度设置auto时，过渡失灵的情况，我们用max-height替代原本的height",
+        "explanation": "max-height相比height更灵活。哎，说这么多不如看代码",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/transition-maxheight-dom.jpg",
+        "ImgExplanation": "DOM结构初始化"
+      }, {
+        "answer": "",
+        "explanation": "",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/transition-maxheight-style.jpg",
+        "ImgExplanation": "style样式初始化"
+      }, {
+        "answer": "结果展示",
+        "explanation": "",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/transition-maxheight-finish.gif",
+        "ImgExplanation": "注：max-height的值，一定要大于子菜单高度的值"
       }]
     }
   }],

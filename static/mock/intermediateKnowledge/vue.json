@@ -64,6 +64,19 @@
           "ImgExplanation": ""
         }]
       }
+    },
+    {
+      "id": 6,
+      "titleList": "vue强制数据刷新",
+      "questions": {
+        "question": "更改data中数据时，遇到无法实时刷新怎么办？",
+        "answer": [{
+          "answer": "",
+          "explanation": "To be continued...",
+          "url": "",
+          "ImgExplanation": ""
+        }]
+      }
     }
   ]
 }

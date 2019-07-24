@@ -88,12 +88,7 @@
         "answer": "1.项目中创建分支(参考git命令或代码管理网站创建)",
         "explanation": "在我们项目创建新分支后，需要及时的<span class='K_W'>git pull</span>下来,并且需要转移：<span class='K_W'>git branch</span>到新分支上进行开发",
         "url": "",
-        "ImgExplanation": "随后我们对新分支进行开发完成后，提交代码合并：<span class='K_W'>git merge 'branch'</span>到主分支,最后<span class='K_W'>git&nbsp;push</span>进行提交"
-      }, {
-        "answer": "",
-        "explanation": "",
-        "url": "",
-        "ImgExplanation": ""
+        "ImgExplanation": "随后我们对新分支进行开发完成后，提交代码合并分支：<span class='K_W'>git merge 'branch'</span>到主分支,最后<span class='K_W'>git&nbsp;push</span>进行提交"
       }]
     }
   }]

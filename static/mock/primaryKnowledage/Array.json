@@ -1,84 +1,121 @@
 {
   "ret": true,
   "articleList": [{
-    "id": 1,
-    "titleList": "js千分符",
-    "questions": {
-      "question": "给予一串数字，对数字进行千分符单位转换，如：123456789，转为123.456.789",
-      "answer": [{
-        "answer": "方法一：for循环实现",
-        "explanation": "思路：将'点'插入到数字的倒数第三位前并每隔三位加一个'点'",
-        "url": "./static/mock/primaryKnowledage/ArrayImg/千分符1.jpg",
-        "ImgExplanation": ""
-      }, {
-        "answer": "方法二：正则表达式",
-        "explanation": "思路：使用正则匹配对应位置，添加位置并替换为'点'",
-        "url": "./static/mock/primaryKnowledage/ArrayImg/千分符1.jpg",
-        "ImgExplanation": ""
-      }]
+      "id": 1,
+      "titleList": "js千分符",
+      "questions": {
+        "question": "给予一串数字，对数字进行千分符单位转换，如：123456789，转为123.456.789",
+        "answer": [{
+            "answer": "方法一：for循环实现",
+            "explanation": "思路：将'点'插入到数字的倒数第三位前并每隔三位加一个'点'",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/千分符1.jpg",
+            "ImgExplanation": ""
+          },
+          {
+            "answer": "方法二：正则表达式",
+            "explanation": "思路：使用正则匹配对应位置，添加位置并替换为'点'",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/千分符1.jpg",
+            "ImgExplanation": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "titleList": "数组去重",
+      "questions": {
+        "question": "请对arr=['a','a','c','d','e','f','c','a','e']进行去重",
+        "answer": [{
+          "answer": "",
+          "explanation": "思路，新建一新数组，遍历传入数组值，值不在新数组中就push进该新数组中",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/数组去重1.jpg",
+          "ImgExplanation": ""
+        }]
+      }
+    },
+    {
+      "id": 3,
+      "titleList": "数组平拍",
+      "questions": {
+        "question": "请实现一个方法，将嵌套的数组扁平化",
+        "answer": [{
+            "answer": "1.1递归思维-for-!isArray-recursion",
+            "explanation": "思路：新建数组，遍历传入的数组值，判断是否为数组类型，是则push进新数组，否则执行递归方法，对递归后的数组进行concat合并操作",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍.jpg",
+            "ImgExplanation": "该方法中，newArr变量一直存在，为防止污染需及时清空"
+          },
+          {
+            "answer": "1.2递归思维-for-typeof-instanceof-recursion",
+            "explanation": "思路：新建数组，遍历传入的数组值，判断是否为Number类型，是则push进新数组，否则执行是否为array类型，对递归后的数组进行concat合并操作",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍3.jpg",
+            "ImgExplanation": "该方法适用于数字平铺，如想将字符串平铺需进行改进"
+          },
+          {
+            "answer": "1.3递归思维-while-prototype-some-concat-apply",
+            "explanation": "思路：通过while循环中array.some方法判断数组中元素是否为数组，再对元素进行合并操作",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍4.jpg",
+            "ImgExplanation": "该方法的关键，1.使用Array.some方法作为循环条件，2.利用数组原型链进行合并操作，"
+          },
+          {
+            "answer": "2.正则思想",
+            "explanation": "思路：将数组转为字符串，利用正则表达式replace方法替换字符串内的中括号，在将字符串转为数组",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍2.jpg",
+            "ImgExplanation": "该方法虽然代码少，逻辑清晰，但原题对数组中类型如有严格要求，要及时转换。"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "titleList": "扩展符号...的使用",
+      "questions": {
+        "question": "暂无",
+        "answer": [{
+          "answer": "",
+          "explanation": "",
+          "url": "",
+          "ImgExplanation": ""
+        }]
+      }
+    },
+    {
+      "id": 5,
+      "titleList": "深浅克隆",
+      "questions": {
+        "question": "暂无",
+        "answer": [{
+          "answer": "",
+          "explanation": "",
+          "url": "",
+          "ImgExplanation": ""
+        }]
+      }
+    },
+    {
+      "id": 6,
+      "titleList": "Set方法",
+      "questions": {
+        "question": "Set去重，以及set常见用法",
+        "answer": [{
+            "answer": "1.set用法",
+            "explanation": "通过图片我们可以了解到，Set()方法会返回一个特殊的对象<br>该对象内的<span class='K_W'>值唯一</span>，可<span class='K_W'>添加</span>，可<span class='K_W'>删除</span>，可判断<span class='K_W'>是否存在某值</span>，可<span class='K_W'>获取长度</span>。",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/Set.jpg",
+            "ImgExplanation": "可以利用Set方法的特性，对数组进行去重操作。"
+          },
+          {
+            "answer": "2.set方法去重",
+            "explanation": "去重方式如下：",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/Set-DuplicationCanBeRemoved.jpg",
+            "ImgExplanation": "不过要注意一点，数组内的数据类型相同，才会选唯一值。"
+          },
+          {
+            "answer": "",
+            "explanation": "请看下面的例子",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/Set-DuplicationCanBeRemoved-Else.jpg",
+            "ImgExplanation": "不同类型的变量会被添加到set中"
+          }
+        ]
+      }
     }
-  }, {
-    "id": 2,
-    "titleList": "数组去重",
-    "questions": {
-      "question": "请对arr=['a','a','c','d','e','f','c','a','e']进行去重",
-      "answer": [{
-        "answer": "",
-        "explanation": "思路，新建一新数组，遍历传入数组值，值不在新数组中就push进该新数组中",
-        "url": "./static/mock/primaryKnowledage/ArrayImg/数组去重1.jpg",
-        "ImgExplanation": ""
-      }]
-    }
-  }, {
-    "id": 3,
-    "titleList": "数组平拍",
-    "questions": {
-      "question": "请实现一个方法，将潜逃的数组扁平化",
-      "answer": [{
-        "answer": "1.1递归思维-for-!isArray-recursion",
-        "explanation": "思路：新建数组，遍历传入的数组值，判断是否为数组类型，是则push进新数组，否则执行递归方法，对递归后的数组进行concat合并操作",
-        "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍.jpg",
-        "ImgExplanation": "该方法中，newArr变量一直存在，为防止污染需及时清空"
-      }, {
-        "answer": "1.2递归思维-for-typeof-instanceof-recursion",
-        "explanation": "思路：新建数组，遍历传入的数组值，判断是否为Number类型，是则push进新数组，否则执行是否为array类型，对递归后的数组进行concat合并操作",
-        "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍3.jpg",
-        "ImgExplanation": "该方法适用于数字平铺，如想将字符串平铺需进行改进"
-      }, {
-        "answer": "1.3递归思维-while-prototype-some-concat-apply",
-        "explanation": "思路：通过while循环中array.some方法判断数组中元素是否为数组，再对元素进行合并操作",
-        "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍4.jpg",
-        "ImgExplanation": "该方法的关键，1.使用Array.some方法作为循环条件，2.利用数组原型链进行合并操作，"
-      }, {
-        "answer": "2.正则思想",
-        "explanation": "思路：将数组转为字符串，利用正则表达式replace方法替换字符串内的中括号，在将字符串转为数组",
-        "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍2.jpg",
-        "ImgExplanation": "该方法虽然代码少，逻辑清晰，但原题对数组中类型如有严格要求，要及时转换。"
-      }]
-    }
-  }, {
-    "id": 4,
-    "titleList": "扩展符号...的使用",
-    "questions": {
-      "question": "暂无",
-      "answer": [{
-        "answer": "",
-        "explanation": "",
-        "url": "",
-        "ImgExplanation": ""
-      }]
-    }
-  }, {
-    "id": 5,
-    "titleList": "深浅克隆",
-    "questions": {
-      "question": "暂无",
-      "answer": [{
-        "answer": "",
-        "explanation": "",
-        "url": "",
-        "ImgExplanation": ""
-      }]
-    }
-  }]
+  ]
 }
