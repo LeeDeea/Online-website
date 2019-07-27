@@ -7,7 +7,7 @@
       "question": "置顶：拽取某一版本下的代码。",
       "answer": [{
         "answer": "这里是一个置顶回答，因为遇到一个实用性比较大的git方法",
-        "explanation": "点击：<a style='color:red;' href='https://blog.csdn.net/liangfeng093/article/details/79199548' target='_blank'>获取项目某一版本的全部代码，不用回退版本",
+        "explanation": "点击链接：<a style='color:red;' href='https://blog.csdn.net/liangfeng093/article/details/79199548' target='_blank'>获取项目某一版本的全部代码，不用回退版本",
         "url": "",
         "ImgExplanation": ""
       }, {

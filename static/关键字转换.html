@@ -15,7 +15,7 @@
 <body>
   <div>
     <textarea id="know" shape="20" coords="20" href="" alt=""></textarea>
-	<input id="addKW">
+    <input id="addKW">
   </div>
   <input onclick="btn()" type="button" value="提交">
   <input onclick="deleteKW()" type="button" value="删除关键字">
@@ -23,10 +23,10 @@
 <script scorde>
   function deleteKW() {
     var know = document.getElementById('addKW')
-	var knowVal = know.value;
-	var knows = document.getElementById('know')
-	knowVal = knowVal.replace(/<span class='K_W'>/,'');
-	knowVal = knowVal.replace(/<\/span>/,'');
+    var knowVal = know.value;
+    var knows = document.getElementById('know')
+    knowVal = knowVal.replace(/<span class='K_W'>/, '');
+    knowVal = knowVal.replace(/<\/span>/, '');
     knows.value += knowVal;
     console.log(`<span class='K_W'>${knowVal}</span>`);
   }

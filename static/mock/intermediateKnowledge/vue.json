@@ -58,7 +58,7 @@
       "questions": {
         "question": "标签中，加不加key值的影响",
         "answer": [{
-          "answer": "由于vue中为提升渲染效率，会将同一dom进行innerText复用dom，如果为标签附加key值会提供唯一性，可避免复用dom带来的如动画消失的影响",
+          "answer": "由于vue中为提升渲染效率，会将同一dom进行innerText复用dom，如果为标签附加key值会提供唯一性，可避免复用dom带来的如动画消失的影响,同时由于vue中的对比算法，会让拥有key值的dom元素更快的被匹配",
           "explanation": "To be continued...",
           "url": "",
           "ImgExplanation": ""

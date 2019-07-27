@@ -71,14 +71,8 @@
         "answer": "结果展示",
         "explanation": "",
         "url": "./static/mock/primaryKnowledage/CssTransitionImg/transition-maxheight-finish.gif",
-        "ImgExplanation": "注：max-height的值，一定要大于子菜单高度的值"
+        "ImgExplanation": "注：max-height的值，一定要设置成大于 子菜单总height的值"
       }]
     }
-  }],
-  "test": {
-    "answer": "2.径向渐变（Radial Gradients）- 由它们的中心定义",
-    "explanation": "",
-    "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_top.png",
-    "ImgExplanation": ""
-  }
+  }]
 }
