@@ -2,25 +2,49 @@
   "ret": true,
   "articleList": [{
     "id": 1,
-    "titleList": "call、apply、bind三者区别",
+    "titleList": "call、apply、bind",
     "questions": {
-      "question": "暂无解析",
+      "question": "三者区别",
       "answer": [{
-        "answer": "",
+        "answer": "看图说话：",
         "explanation": "",
-        "url": "",
+        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/CallApplyBindDescribe.jpg",
         "ImgExplanation": ""
       }]
     }
   }, {
     "id": 2,
-    "titleList": "手写bind函数",
+    "titleList": "手写call函数",
     "questions": {
-      "question": "暂无解析",
+      "question": "手写call函数",
       "answer": [{
         "answer": "",
         "explanation": "",
-        "url": "",
+        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/writeApply.jpg",
+        "ImgExplanation": ""
+      }]
+    }
+  }, {
+    "id": 3,
+    "titleList": "手写apply函数",
+    "questions": {
+      "question": "手写apply函数",
+      "answer": [{
+        "answer": "",
+        "explanation": "",
+        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/writeCall.jpg",
+        "ImgExplanation": ""
+      }]
+    }
+  }, {
+    "id": 4,
+    "titleList": "手写bind函数",
+    "questions": {
+      "question": "手写bind函数",
+      "answer": [{
+        "answer": "",
+        "explanation": "",
+        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/writeBind.jpg",
         "ImgExplanation": ""
       }]
     }
