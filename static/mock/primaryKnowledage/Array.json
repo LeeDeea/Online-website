@@ -57,27 +57,35 @@
         }]
       }
     }, {
-      "id": 4,
-      "titleList": "扩展符号...的使用",
-      "questions": {
-        "question": "暂无",
-        "answer": [{
-          "answer": "",
-          "explanation": "",
-          "url": "",
-          "ImgExplanation": ""
-        }]
-      }
-    }, {
       "id": 5,
       "titleList": "深浅克隆",
       "questions": {
-        "question": "暂无",
+        "question": "请描述深浅克隆的区别：并试着实现简单的深拷贝",
         "answer": [{
-          "answer": "",
-          "explanation": "",
-          "url": "",
+          "answer": "在实际开发过程中，我们并不知道传过来的数据是否在其他地方还要使用，贸然改变数据的值可能会出现数据错误的问题",
+          "explanation": "所以对传递过来的数据我们要保存后时候。这就涉及到浅拷贝与深拷贝的知识了",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/CopyNeedKnow.png",
           "ImgExplanation": ""
+        }, {
+          "answer": "1. 浅拷贝 第一种情况，改变值数据都会被改变",
+          "explanation": "浅拷贝，顾名思义，拷贝的程度较低，如图所示",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/shallowCopy-1.jpg",
+          "ImgExplanation": "直接赋值形式的拷贝会使得数据改变时出现问题，这是第一种情况，那么造成这样情况的原因是什么呢？"
+        }, {
+          "answer": "",
+          "explanation": "如图所示",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/shallowCopy-2.png",
+          "ImgExplanation": "我们可以知道在直接将arr属性赋值给shallowCopy的时候，只是在堆内存中创建了一个变量，地址指向了与arr相同的堆内存中，所以当我们改变其中一个值的时候，另一个值也会被改变"
+        }, {
+          "answer": "1.1 浅拷贝 第二种情况，改变值时只对引用数据类型产生效果",
+          "explanation": "请看下图",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/shallowCopy-3.jpg",
+          "ImgExplanation": "我们可以看到，第一层拷贝成功，但是下一层的引用类型并没有实现深入拷贝（下面会将深拷贝），诸如：slice，concat，shallowCopy=[...arr]这三种都会实现这样的浅拷贝"
+        }, {
+          "answer": "2. 深拷贝",
+          "explanation": "深拷贝不同浅拷贝，深拷贝要独立于被拷贝的数据，达到完全脱离原数据的堆地址",
+          "url": "",
+          "ImgExplanation": "更新ing···"
         }]
       }
     },
