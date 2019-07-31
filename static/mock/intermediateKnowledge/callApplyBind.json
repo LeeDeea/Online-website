@@ -6,8 +6,8 @@
     "questions": {
       "question": "三者区别",
       "answer": [{
-        "answer": "看图说话：",
-        "explanation": "",
+        "answer": "请看下图",
+        "explanation": "call与apply的参数不同，直接使用。bind是apply做的封装，返回一个函数。",
         "url": "./static/mock/intermediateKnowledge/callApplyBindImg/CallApplyBindDescribe.jpg",
         "ImgExplanation": ""
       }]
