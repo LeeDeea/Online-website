@@ -7,7 +7,7 @@
       "question": "this指向",
       "answer": [{
         "answer": "this指向问题诸如闭包，函数域等等",
-        "explanation": "this指向当前函数的作用于，如window，function等通过存储this指向（如：var that = this）可在函数中使用访问其他函数作用于（如：that.data）",
+        "explanation": "this指向当前函数的作用域，如window，function等通过存储this指向（如：var that = this）可在函数中使用访问其他函数作用于（如：that.data）,箭头函数没有作用域，其指向包裹箭头函数的环境（如window，function）",
         "url": "",
         "ImgExplanation": ""
       }]

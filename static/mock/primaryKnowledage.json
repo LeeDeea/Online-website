@@ -10,10 +10,6 @@
       "articleList": "CssTransition.json",
       "title": "CSS妙用属性"
     }, {
-      "id": 4,
-      "articleList": "CssSelector.json",
-      "title": "css选择器"
-    }, {
       "id": 5,
       "articleList": "ThisPointing.json",
       "title": "作用域this指向"
@@ -30,14 +26,6 @@
       "articleList": "Object.json",
       "title": "对象操作"
     }, {
-      "id": 9,
-      "articleList": "Es5.json",
-      "title": "ECMA5规范(es5)"
-    }, {
-      "id": 10,
-      "articleList": "Es6.json",
-      "title": "ECMA6规范(es6)"
-    }, {
       "id": 11,
       "articleList": "Ajax.json",
       "title": "Ajax数据请求"
@@ -47,7 +35,7 @@
       "title": "Http协议"
     }, {
       "id": 13,
-      "articleList": "DataStructure.json",
+      "articleList": "DataStructures.json",
       "title": "数据结构"
     }, {
       "id": 14,

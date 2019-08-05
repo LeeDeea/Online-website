@@ -1,16 +1,38 @@
 {
   "ret": true,
-  "articleList": [{
-    "id": 1,
-    "titleList": "对象遍历",
-    "questions": {
-      "question": "",
-      "answer": [{
-        "answer": "提上日程",
-        "explanation": "",
-        "url": "",
-        "ImgExplanation": ""
-      }]
+  "articleList": [
+    {
+      "id": 1,
+      "titleList": "双向绑定-vue之数据劫持",
+      "questions": {
+        "question": "利用Object.defineProperty实现数据双向绑定(vue3.0将不再使用，而是使用效率更高的proxy代理)",
+        "answer": [
+          {
+            "answer": "使用Object.defineProperty，对数据进行set方法监听，这就像是爹妈看孩子，孩子犯错，爹妈就跟着擦屁股，孩子得奖，爹妈就想着鼓励孩子，我们使用set方法来连接爹妈与孩子的这种行为",
+            "explanation": "PS:有想了解proxy代理的小伙伴清戳链接哟：<a class='a_href' href='https://www.jianshu.com/p/2a8ec76e0090' target='_blank' >传送门</a>",
+            "url": "./static/mock/primaryKnowledage/ObjectImg/MvvM-vue.jpg",
+            "ImgExplanation": ""
+          },
+          {
+            "answer": "结果：",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/ObjectImg/MvvM-vue-first.jpg",
+            "ImgExplanation": "我们可以看到一些结果，这些由set与get方法得来，接下来我们继续完善代码"
+          },
+          {
+            "answer": "数据劫持的第二版",
+            "explanation": "我们要在代码中添加<span class='K_W'>keyup</span>事件监听,与<span class='K_W'>中文</span>监听，实现input输入下方做出改变的绑定效果，并优化用户体验",
+            "url": "./static/mock/primaryKnowledage/ObjectImg/MvvM-vue-second.jpg",
+            "ImgExplanation": "我在下方新增加了两个输入文字的star事件与end事件监听来提升用户体验度,至此简单的完成了数据的双向绑定"
+          },
+          {
+            "answer": "结果：",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/ObjectImg/MvvM-vue-gif.gif",
+            "ImgExplanation": ""
+          }
+        ]
+      }
     }
-  }]
+  ]
 }

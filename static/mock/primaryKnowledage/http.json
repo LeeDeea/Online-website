@@ -7,7 +7,7 @@
       "question": "请说出什么是状态码？常见的状态码有哪些？",
       "answer": [{
         "answer": "协议状态码，当我们访问url时提示的反馈，常见的状态吗如下：",
-        "explanation": "点击链接：<a style='color:red;' href='https://baike.baidu.com/item/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/5053660?fr=aladdin' target='_blank' >百度百科状态码</a>",
+        "explanation": "点击链接：<a class='a_href' href='https://baike.baidu.com/item/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/5053660?fr=aladdin' target='_blank' >百度百科状态码</a>",
         "url": "",
         "ImgExplanation": ""
       }, {
@@ -68,7 +68,7 @@
     }
   }, {
     "id": 4,
-    "titleList": "httpRequest、httpResponse",
+    "titleList": "httpRequest、Response",
     "questions": {
       "question": "http请求与http响应",
       "answer": [{

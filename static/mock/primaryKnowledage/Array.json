@@ -1,13 +1,11 @@
 {
   "ret": true,
-  "articleList": [
-    {
+  "articleList": [{
       "id": 1,
       "titleList": "js千分符",
       "questions": {
         "question": "给予一串数字，对数字进行千分符单位转换，如：123456789，转为123.456.789",
-        "answer": [
-          {
+        "answer": [{
             "answer": "方法一：for循环实现",
             "explanation": "思路：将'点'插入到数字的倒数第三位前并每隔三位加一个'点'",
             "url": "./static/mock/primaryKnowledage/ArrayImg/千分符1.jpg",
@@ -27,14 +25,12 @@
       "titleList": "数组去重",
       "questions": {
         "question": "请对arr=['a','a','c','d','e','f','c','a','e']进行去重",
-        "answer": [
-          {
-            "answer": "",
-            "explanation": "思路，新建一个数组，遍历传入数组值，值不在新数组中就push进该新数组中",
-            "url": "./static/mock/primaryKnowledage/ArrayImg/数组去重1.jpg",
-            "ImgExplanation": ""
-          }
-        ]
+        "answer": [{
+          "answer": "",
+          "explanation": "思路，新建一个数组，遍历传入数组值，值不在新数组中就push进该新数组中",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/数组去重1.jpg",
+          "ImgExplanation": ""
+        }]
       }
     },
     {
@@ -42,8 +38,7 @@
       "titleList": "数组平拍",
       "questions": {
         "question": "请实现一个方法，将嵌套的数组扁平化",
-        "answer": [
-          {
+        "answer": [{
             "answer": "1.1递归思维-for-!isArray-recursion",
             "explanation": "思路：新建数组，遍历传入的数组值，判断是否为数组类型，是则push进新数组，否则执行递归方法，对递归后的数组进行concat合并操作",
             "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍.jpg",
@@ -75,8 +70,7 @@
       "titleList": "深浅克隆",
       "questions": {
         "question": "请描述深浅克隆的区别：并试着实现简单的深拷贝",
-        "answer": [
-          {
+        "answer": [{
             "answer": "在实际开发过程中，我们并不知道传过来的数据是否在其他地方还要使用，贸然改变数据的值可能会出现数据错误的问题",
             "explanation": "所以对传递过来的数据我们要保存后使用。这就涉及到浅拷贝与深拷贝的知识了",
             "url": "./static/mock/primaryKnowledage/ArrayImg/CopyNeedKnow.png",
@@ -98,7 +92,7 @@
             "answer": "1.1 浅拷贝 第二种情况，改变值的连锁反应只使用基本类型的值",
             "explanation": "请看下图(先看红色区域，再看绿色区域)",
             "url": "./static/mock/primaryKnowledage/ArrayImg/shallowCopy-3.jpg",
-            "ImgExplanation": "我们可以看到，第一层拷贝成功，但是下一层的引用类型并没有实现深入拷贝（下面会讲深拷贝）<br>诸如：<span class='K_W'>数组的slice()方法，concat()方法，直接使用扩展运算符赋值shallowCopy = [...arr],或对象的复制方法：Object.assign()</span>这几种都会实现这样的浅拷贝"
+            "ImgExplanation": "我们可以看到，第一层拷贝成功，但是下一层的引用类型并没有实现深入拷贝（下面会讲深拷贝）<br>诸如：<span class='K_W'>数组的slice()方法，concat()方法，直接使用扩展运算符赋值shallowCopy = [...arr], 或对象的复制方法：Object.assign()</span>这几种都会实现这样的浅拷贝"
           },
           {
             "answer": "2. 深拷贝",
@@ -144,8 +138,7 @@
       "titleList": "Set方法",
       "questions": {
         "question": "Set去重，以及set常见用法",
-        "answer": [
-          {
+        "answer": [{
             "answer": "1.set用法",
             "explanation": "通过图片我们可以了解到，Set()方法会返回一个特殊的对象<br>该对象内的<span class='K_W'>值唯一</span>，可<span class='K_W'>添加</span>，可<span class='K_W'>删除</span>，可判断<span class='K_W'>是否存在某值</span>，可<span class='K_W'>获取长度</span>。",
             "url": "./static/mock/primaryKnowledage/ArrayImg/Set.jpg",
@@ -171,14 +164,12 @@
       "titleList": "常见排序方式",
       "questions": {
         "question": "",
-        "answer": [
-          {
-            "answer": "提上日程",
-            "explanation": "",
-            "url": "",
-            "ImgExplanation": ""
-          }
-        ]
+        "answer": [{
+          "answer": "提上日程",
+          "explanation": "",
+          "url": "",
+          "ImgExplanation": ""
+        }]
       }
     }
   ]
