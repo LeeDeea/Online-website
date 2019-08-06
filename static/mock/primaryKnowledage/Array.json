@@ -158,17 +158,40 @@
           }
         ]
       }
-    },
-    {
+    }, {
       "id": 7,
-      "titleList": "常见排序方式",
+      "titleList": "手写isArray",
       "questions": {
-        "question": "",
+        "question": "手写isArray方法",
         "answer": [{
-          "answer": "提上日程",
+            "answer": "1.利用 Object.prototype.toString 判断",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/write-isArray-1.jpg",
+            "ImgExplanation": "这里有一个<span class='K_W'>小知识点</span>，Object.prototype.toString 会返回<span class='K_W'>\"[object type]\"</span>，其中type是对象的类型。<br>但Array、Function都重写了Object的toString方法，所以需要call函数改变指向，直接调用Object的toString方法，否则无法达到判断类型的效果<br>小技巧：<span class='K_W'>Object.prototype.toString.call(arg)</span>可简写为<span class='K_W'>toString.call(arg)</span>"
+          }, {
+            "answer": "2.利用 instanceof 判断",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/write-isArray-instanceof.jpg",
+            "ImgExplanation": ""
+          },
+          {
+            "answer": "3.利用数组本身的 括号 判断",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/write-isArray-string.jpg",
+            "ImgExplanation": "由于这个方法实在是太笨了，实在是不推荐 ┑(￣Д ￣)┍ "
+          }
+        ]
+      }
+    }, {
+      "id": 8,
+      "titleList": "求首次出现最长字符串",
+      "questions": {
+        "question": "请对字符串str进行字符串查找，找出首次出现，最长无重复的字符串",
+        "answer": [{
+          "answer": "思路：新建数组存放str中出现的唯一值，并设置index索引。最终，遍历index索引找到最大值。",
           "explanation": "",
-          "url": "",
-          "ImgExplanation": ""
+          "url": "./static/mock/primaryKnowledage/ArrayImg/lengthOfLongestSubString.jpg",
+          "ImgExplanation": "<span class='K_W'>split</span>方法将str变为字符串<br><span class='K_W'>arr存放最长字符串</span><br><span class='K_W'>indexArr</span>存放每次最长字符串出现时的index<br><span class='K_W'>index</span>用于存放最长字符串的长度索引"
         }]
       }
     }
