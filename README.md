@@ -11,4 +11,4 @@
 ---
 
 * 想下载源码观看的同学可移步到我的另一个[项目下Item-bank](https://github.com/LeeDeea/Item-bank)，**git clone**该项目
-> 注：需安装node.js环境与webpack。通过**npm install**命令安装所有依赖即可，再次通过**npm run dev**命令即可在本地的8080端口访问。
+> 注：需安装node.js环境与webpack。通过**npm install**命令安装所有依赖即可，再次通过**npm run dev**命令即可在本地的8080端口访问。φ(≧ω≦*)♪
