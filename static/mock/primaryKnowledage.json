@@ -12,7 +12,7 @@
     }, {
       "id": 5,
       "articleList": "ThisPointing.json",
-      "title": "作用域this指向"
+      "title": "控制台输出"
     }, {
       "id": 6,
       "articleList": "RegularExpression.json",
