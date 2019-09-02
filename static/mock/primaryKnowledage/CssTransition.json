@@ -1,0 +1,78 @@
+{
+  "ret": true,
+  "articleList": [{
+    "id": 1,
+    "titleList": "渐变基础知识",
+    "questions": {
+      "question": "CSS3中渐变的实现",
+      "answer": [{
+        "answer": "渐变(gradients)是css3中的新属性，使用它会让背景颜色的过渡显示更加平滑",
+        "explanation": "CSS3 定义了两种类型的渐变（gradients）：",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_top.png",
+        "ImgExplanation": ""
+      }, {
+        "answer": "1.线性渐变（Linear Gradients）- 向下/向上/向左/向右/对角方向",
+        "explanation": "渐变的默认方向为<span class='K_W'>自上而下</span>。",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear.png",
+        "ImgExplanation": "background:<span class='K_W'> linear-gradient(red, blue); </span>/*自上而下(默认)*/<br>background:<span class='K_W'> linear-gradient(to right, red , blue);</span>/*自左向右*/<br>background:<span class='K_W'> linear-gradient(to bottom right, red , blue);</span>/*对角方式*/<br>渐变方向：<span class='K_W'>to bottom</span><span class='K_W'>to top</span><span class='K_W'>to right</span><span class='K_W'>to left</span><span class='K_W'>to bottom right</span><span class='K_W'>to left top</span>"
+      }, {
+        "answer": "1.1线性渐变可以使用角度（0deg），来达成任意方向的变化",
+        "explanation": "但是，请注意很多浏览器(Chrome,Safari,fiefox等)的使用了旧的标准，即 0deg 将创建一个从左到右的渐变，90deg 将创建一个从下到上的渐变。换算公式 90 - x = y 其中 x 为标准角度，y为非标准角度。",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear_deg.jpg",
+        "ImgExplanation": "background: <span class='K_W'>linear-gradient(180deg, red, blue);</span>"
+      }, {
+        "answer": "1.2多颜色节点",
+        "explanation": "渐变使用可是添加多个颜色，十分方便",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear_node.jpg",
+        "ImgExplanation": "background: <span class='K_W'>linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); </span>"
+      }, {
+        "answer": "1.3透明度（transparent）",
+        "explanation": "渐变使用可是添加多个颜色，十分方便",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear_ transparent.jpg",
+        "ImgExplanation": "background: <span class='K_W'>linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));</span>"
+      }, {
+        "answer": "1.4重复性渐变",
+        "explanation": "渐变使用可是添加多个颜色，十分方便",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_linear_ transparent.jpg",
+        "ImgExplanation": "background: <span class='K_W'>linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));</span>"
+      }, {
+        "answer": "2.径向渐变",
+        "explanation": "至少两种颜色节点，自内向外渐变，由于颜色的选择使得处于中间的一个颜色或多个颜色呈原型、或椭圆形",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_radial.jpg",
+        "ImgExplanation": "background: <span class='K_W'>radial-gradient(red, yellow, green);</span>/*标准代码*/"
+      }, {
+        "answer": "2.1径向渐变的节点分布",
+        "explanation": "我们可以灵活的改变颜色所占的百分比",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_radial_percentage.jpg",
+        "ImgExplanation": "background: <span class='K_W'>radial-gradient(red 5%, green 15%, blue 60%);</span>/*占比*/"
+      }, {
+        "answer": "2.2径向渐变的形状",
+        "explanation": "径向渐变的形状可以有圆形(circle)与椭圆形(ellipse)",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/gradient_radial_circle.jpg",
+        "ImgExplanation": "background: <span class='K_W'>radial-gradient(circle, green 15%, blue 60%);</span>/*控制形状*/"
+      }]
+    }
+  }, {
+    "id": 2,
+    "titleList": "高度auto，过渡失效",
+    "questions": {
+      "question": "二级菜单高度auto，过渡失效如何解决",
+      "answer": [{
+        "answer": "元素高度设置auto时，过渡失灵的情况，我们用max-height替代原本的height",
+        "explanation": "max-height相比height更灵活。哎，说这么多不如看代码",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/transition-maxheight-dom.jpg",
+        "ImgExplanation": "DOM结构初始化"
+      }, {
+        "answer": "",
+        "explanation": "",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/transition-maxheight-style.jpg",
+        "ImgExplanation": "style样式初始化"
+      }, {
+        "answer": "结果展示",
+        "explanation": "",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/transition-maxheight-finish.gif",
+        "ImgExplanation": "注：max-height的值，一定要设置成大于 子菜单总height的值"
+      }]
+    }
+  }]
+}

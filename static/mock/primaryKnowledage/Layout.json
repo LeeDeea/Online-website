@@ -1,0 +1,377 @@
+{
+  "ret": true,
+  "articleList": [{
+      "id": 1,
+      "titleList": "弹性布局(Flexible Box)",
+      "questions": {
+        "question": "弹性布局的设计实现（阮一峰的博客整理）",
+        "answer": [{
+            "answer": "flex弹性布局是2009年W3C提出的一种新型的布局方式，由display:flex属性将标签设置为flex容器（注:设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。）",
+            "explanation": "使用flex布局可以避免传统盒子模型中使用position,float等带来的如:文档流，或者清除浮动，垂直居中等，flex布局发展至今已得到绝大多数浏览器的支持",
+            "url": "",
+            "ImgExplanation": ""
+          },
+          {
+            "answer": "一、了解flex布局的轴概念",
+            "explanation": "首先要了解当容器的diplay变为flex时，它是如何规定内部空间的",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/轴向.jpg",
+            "ImgExplanation": "定义：flex属性会将容器变为<span class='K_W'>横纵排列</span>共存在两根轴 主轴与交叉轴<br><span class='K_W'>main axis 水平主轴</span>：main start 与 main end<br><span class='K_W'>cross axis 垂直交叉轴</span>：cross start 与 cross end。<br>且项目默认沿主轴方向排列：单个小项目占据的主轴空间为main size，交叉轴空间为cross size。"
+          },
+          {
+            "answer": "二、flex布局的六种控制属性",
+            "explanation": "1.flex-direction 决定元素在容器内以何种方向排序",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/flex-direction.jpg",
+            "ImgExplanation": "样式：<span class='K_W'>flex-direction</span>：row | row-reverse | column | column-reverse;<br><span class='K_W'>row（默认值）</span>：主轴为水平方向，起点在左端。<br><span class='K_W'>row-reverse</span>：主轴为水平方向，起点在右端。<br><span class='K_W'>column</span>：主轴为垂直方向，起点在上沿。<br><span class='K_W'>column-reverse</span>：主轴为垂直方向，起点在下沿。<br>"
+          },
+          {
+            "answer": "",
+            "explanation": "2.flex-wrap 决定元素在容器内超出如何换行，如下图（阮一峰老师博客图）",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/flex-wrap.jpg",
+            "ImgExplanation": "样式：<span class='K_W'>flex-wrap</span>：nowrap | wrap | wrap-reverse;<br><span class='K_W'>nowrap（默认）</span>：不换行。<br><span class='K_W'>wrap</span>：换行，第一行在上方。<br><span class='K_W'>wrap-reverse</span>：换行，第一行在下方。<br>"
+          },
+          {
+            "answer": "",
+            "explanation": "3.flex-flow 该属性为，flex-direction与flex-wrap的缩写形式，默认值为row nowrap",
+            "url": "",
+            "ImgExplanation": "样式：<span class='K_W'>flex-flow</span>：row nowrap"
+          },
+          {
+            "answer": "",
+            "explanation": "4.justify-content（常用） 该属性定义了项目在主轴上（左右）的对齐方式。",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/justify-content.jpg",
+            "ImgExplanation": "样式：<span class='K_W'>justify-content</span>：flex-start | flex-end | center | space-between | space-around;<br><span class='K_W'>flex-start（默认值）</span>：左对齐<br><span class='K_W'>flex-end</span>：右对齐<br><span class='K_W'>center</span>： 居中<br><span class='K_W'>space-between</span>：两端对齐，项目之间的间隔都相等。<br><span class='K_W'>space-around</span>：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。<br>"
+          },
+          {
+            "answer": "",
+            "explanation": "5.align-items（常用） 该属性规定flex元素的 交叉轴（上下）对齐方式",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/align-items.jpg",
+            "ImgExplanation": "样式：<span class='K_W'>align-items</span>：flex-start | flex-end | center | baseline | stretch;<br><span class='K_W'>flex-start</span>：交叉轴的起点对齐（上对齐）。<br><span class='K_W'>flex-end</span>：交叉轴的终点对齐（下对齐）。<br><span class='K_W'>center</span>：交叉轴的中点对齐（居中对其）。<br><span class='K_W'>baseline</span>：项目的第一行文字的基线对齐。<br><span class='K_W'>stretch（默认值）</span>：如果项目未设置高度或设为auto，将占满整个容器的高度。<br>"
+          },
+          {
+            "answer": "",
+            "explanation": "6.align-content 该属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性失效。",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/align-content.jpg",
+            "ImgExplanation": "<span class='K_W'>align-content</span>：flex-start | flex-end | center | space-between | space-around | stretch;<br><span class='K_W'>flex-start</span>：与交叉轴的起点对齐<br><span class='K_W'>flex-end</span>：与交叉轴的终点对齐。<br><span class='K_W'>center</span>：与交叉轴的中点对齐。<br><span class='K_W'>space-between</span>：与交叉轴两端对齐，轴线之间的间隔平均分布。<br><span class='K_W'>space-around</span>：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。<br><span class='K_W'>stretch（默认值）</span>：轴线占满整个交叉轴。<br>"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "titleList": "三栏布局(1)浮动",
+      "questions": {
+        "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
+        "answer": [{
+            "answer": "解析：该题目考察布局的基础知识，圣杯1布局是相对比较老的题目了，因为现在有更多的布局方式可以实现这样的效果，不过这并不影响它作为经典试题的原因",
+            "explanation": "如下图所示：左右300px中间自适应",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
+            "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+          },
+          {
+            "answer": "1.使用float浮动布局",
+            "explanation": "首先我们使用左右浮动的效果达成三栏布局：代码如下（注意标签语义化）",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-dom.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
+          },
+          {
+            "answer": "2.对项目进行初始化样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式</span><br>初始化高度<span class='K_W'>100px</span>"
+          },
+          {
+            "answer": "3.添加浮动样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-style.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>左右设置浮动，中间不设置宽度"
+          },
+          {
+            "answer": "4.成果展示",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/float-complete.jpg",
+            "ImgExplanation": "利用浮动将左右的<span class='K_W'>元素</span>浮动,其实在红色背景下有着黄色背景部分，这里的文字没有被覆盖可以理解为文字与红色区域处于较高的层级"
+          },
+          {
+            "answer": "延展问题：",
+            "explanation": "倘若我们侧边栏的高度不一致，则float布局会存在一定的问题，如图所示",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-problem.jpg",
+            "ImgExplanation": "我们发现当<b>左边高度减少时</b>，中间自适应的高度向左侵蚀了，原因是:<span class='K_W_C'>左边红色区域的float会使左边区域脱离文档流</span>"
+          },
+          {
+            "answer": "解决建议：",
+            "explanation": "这里我们选择对中间auto区域进行BFC设置。那么何为BFC？BFC如何设置？请移步该分类下的另一文章",
+            "url": "",
+            "ImgExplanation": "常见BFC触发<br>oveflow:不等于默认"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "titleList": "三栏布局(2)定位",
+      "questions": {
+        "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
+        "answer": [{
+            "answer": "解析：除float浮动布局，我们可以尝试使用position定位来解决这样的问题",
+            "explanation": "如下图所示：左右300px中间自适应",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
+            "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+          },
+          {
+            "answer": "1.使用position绝对定位",
+            "explanation": "首先我们为父元素设置relative属性，为子元素设置absolute：代码如下（注意标签语义化）",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-dom.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
+          },
+          {
+            "answer": "2.对项目进行初始化样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
+          },
+          {
+            "answer": "3.添加定位样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-style.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级relative，子元素绝对定位"
+          },
+          {
+            "answer": "4.成果展示",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/position-complete.jpg",
+            "ImgExplanation": "通过使用定位布局使得<span class='K_W'>元素</span>脱离文档流，这样做:<br><span class='K_W'>好处</span>是不会像float一样黄色区域向左侵蚀<br><span class='K_W'>坏处</span>是使得元素脱离了文档流有可能影响接下来的布局"
+          },
+          {
+            "answer": "延展问题：",
+            "explanation": "倘若我们侧边栏的高度不一致，则position布局会存在一定的问题，如图所示",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-problem.jpg",
+            "ImgExplanation": "我们的布局后边其实是有一串123456的数字的，但是并没有显示<br>原因是:<span class='K_W_C'>position会使得元素脱离文档流从而覆盖了下方的字符串123456</span>"
+          },
+          {
+            "answer": "解决建议：",
+            "explanation": "这里建议在position的后方添加一个与position元素等高的空白块元素",
+            "url": "",
+            "ImgExplanation": "但这样的作法会增添额外的DOM"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "titleList": "三栏布局(3)table",
+      "questions": {
+        "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
+        "answer": [{
+            "answer": "解析:如果考虑到兼容性问题又不想使页面中出现浮动或定位的布局方式可以考虑使用table布局（虽然table目前处于摒弃阶段，但仍然适用，并且兼容性最好）",
+            "explanation": "如下图所示：左右300px中间自适应",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
+            "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+          },
+          {
+            "answer": "1.使用table表格布局",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯3-dom.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
+          },
+          {
+            "answer": "2.对项目进行初始化样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
+          },
+          {
+            "answer": "3.添加table样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯3-style.jpg",
+            "ImgExplanation": "我们为父元素设置<span class='K_W'>display：table</span>属性，并对下属的div子元素设置了<span class='K_W'>display：table-cell</span>属性，以此达到三栏布局效果"
+          },
+          {
+            "answer": "4.成果展示",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/table-complete.jpg",
+            "ImgExplanation": "表格布局的<span class='K_W'>兼容性是布局方式中最好的</span>在早期前端开发时利用的最多的就是表格布局，这也是为什么table布局兼容性极好"
+          },
+          {
+            "answer": "延展问题：",
+            "explanation": "虽然table布局兼容性很好，但是会有一些设计上的小问题，如图",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯3-problem.jpg",
+            "ImgExplanation": "对<span class='K_W'>左中右</span>任意元素设置高度时，会使得三个元素的高度统一为最大高度。（图中为黄色区域设置了200px的高度，使得红色与蓝色区域的100px高度显示为200px）"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "titleList": "三栏布局(4)flex",
+      "questions": {
+        "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
+        "answer": [{
+            "answer": "解析：flex布局近几年兴起，得到了浏览器较好的支持，可以选择尝试使用flex布局",
+            "explanation": "如下图所示：左右300px中间自适应",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
+            "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+          },
+          {
+            "answer": "1.使用flex布局",
+            "explanation": "首先我们为父元素设置flex属性，代码如下（注意标签语义化）",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯4-dom.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
+          },
+          {
+            "answer": "2.对项目进行初始化样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
+          },
+          {
+            "answer": "3.添加flex样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯4-style.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级成为flex，为子元素两侧设置宽度，中间利用<span class='K_W'>flex:1</span>实现自适应撑开高度"
+          },
+          {
+            "answer": "4.成果展示",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/flex-complete.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级成为flex，为子元素两侧设置宽度，中间利用<span class='K_W'>flex:1</span>实现自适应撑开高度"
+          },
+          {
+            "answer": "延展问题：",
+            "explanation": "flex布局不会像浮动与定位一样出现流的一些情况，相对比较稳定，即使改变了左中右的高度也不会造成侵蚀或覆盖",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/flex-problem.jpg",
+            "ImgExplanation": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "titleList": "三栏布局(5)grid",
+      "questions": {
+        "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
+        "answer": [{
+            "answer": "解析：grid布局在主流浏览器的表现十分优秀，但在低版本浏览器下得不到很好的支持，grid布局的优势在于代码干练易懂",
+            "explanation": "如下图所示：左右300px中间自适应",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
+            "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
+          },
+          {
+            "answer": "1.使用grid网格布局",
+            "explanation": "首先我们对父元素进行display：grid属性设置",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯5-dom.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
+          },
+          {
+            "answer": "2.对项目进行初始化样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
+          },
+          {
+            "answer": "3.添加grid样式",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯5-style.jpg",
+            "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级relative，子元素绝对定位"
+          },
+          {
+            "answer": "4.成果展示",
+            "explanation": "",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/grid-complete.jpg",
+            "ImgExplanation": "值得一提的是grid布局的兼容性正在被改善，不久的将来前端布局与兼容性将会极大的提升"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "titleList": "清除浮动的方式",
+      "questions": {
+        "question": "清除浮动的方式几种方式",
+        "answer": [{
+            "answer": "首先我们了解一下什么是浮动影响，浮动使得元素脱离文档流对布局造成很大的影响。",
+            "explanation": "比如：浮动会使得元素的体积无法撑开父元素（可以理解为浮在父元素上面），并且浮动元素会影响父元素之外的其他元素，如图",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/clear-float-1.jpg",
+            "ImgExplanation": "上面div中，仅设置了<span class='K_W'>123</span>元素块浮动，首先父元素无法被<span class='K_W'>123</span>元素撑开，其次他影响到了下方div中<span class='K_W'>321</span>的文字位置，了解完浮动带来的影响，那就学习一下如何解决浮动带来的各种问题"
+          },
+          {
+            "answer": "1.对父元素使用overflow:hidden",
+            "explanation": "对父元素使用overflow：hidden，该元素会被父元素限制在容器内，如图，",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/clear-float-2.jpg",
+            "ImgExplanation": "<span class='K_W'>优点</span>：该方法代码少，浏览器支持好<br><span class='K_W'>缺点</span>：但有可能因为overflow：hidden的定义而出现其他问题"
+          },
+          {
+            "answer": "2.利用clear：both属性",
+            "explanation": "在父元素结尾之前添加一个空div，设置clear：both属性",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/clear-float-2.jpg",
+            "ImgExplanation": "<span class='K_W'>优点</span>：该方法代码少，浏览器支持好<br><span class='K_W'>缺点</span>：增加新dom，不容易理解"
+          },
+          {
+            "answer": "3.利用伪类：after与zoom",
+            "explanation": "对父元素设置伪类，代码如下",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/clear-float-3.jpg",
+            "ImgExplanation": "<span class='K_W'>优点</span>：类似方法2，目前使用较多的清除浮动方法，IE8支持：after属性，配合zoom可兼容IE6、IE7<br><span class='K_W'>缺点</span>：代码较多，需伪类after与zoom同用才可以兼容多数浏览器，不容易理解"
+          }, {
+            "answer": "其实还有许多的方法比如，固定父元素高度、父元素一起浮动。但是这些方法会带来新的问题，作为理解就好。",
+            "explanation": "",
+            "url": "",
+            "ImgExplanation": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "titleList": "元素居中的方式",
+      "questions": {
+        "question": "居中的方式？",
+        "answer": [{
+          "answer": "1.绝对定位position",
+          "explanation": "利用绝对定位设置50%宽高位置，减去元素本身的一半宽高即可，如：left：50%; margin-left:(宽度/2)px;或者transform: translate(-50%, -50%);",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "2.利用元素的margin",
+          "explanation": "利用元素margin: 0 auto属性，实现元素水平居中",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "3.弹性布局flex",
+          "explanation": " 设置父元素为display:flex;<br>justify-content: center;横向对齐方式<br>align-items：center 纵向对齐方式",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "4.对于文字使用line-height",
+          "explanation": "设置元素的line-height:元素高度实现元素垂直居中",
+          "url": "",
+          "ImgExplanation": ""
+        }]
+      }
+    },
+    {
+      "id": 9,
+      "titleList": "@media媒体查询",
+      "questions": {
+        "question": "使用media媒体查询做移动端自适应",
+        "answer": [{
+          "answer": "",
+          "explanation": "media媒体查询多用于响应式布局，对于多端应用而言响应式布局可节约开发成本，使得多端适配更容易",
+          "url": "./static/mock/primaryKnowledage/LayoutImg/@media.jpg",
+          "ImgExplanation": "css中使用@media可进行媒体查询操作，将不同分辨率下的代码分离实现适配"
+        }]
+      }
+    },
+    {
+      "id": 10,
+      "titleList": "BFC",
+      "questions": {
+        "question": "什么是BFC，BFC的作用是什么",
+        "answer": [{
+          "answer": "定义：BFC(块儿级格式化上下文)",
+          "explanation": "一个块格式化上下文（block formatting context） 是Web页面的可视化CSS渲染出的一部分。它是块级盒布局出现的区域，也是浮动层元素进行交互的区域。<br>一个块格式化上下文由以下之一创建： <br><br>根元素或其它包含它的元素<br>浮动元素(元素的 float 不是 none)<br>绝对定位元素(元素具有 position 为 absolute 或 fixed)<br>内联块(元素具有 display: inline - block)<br>表格单元格(元素具有 display: table - cell， HTML表格单元格默认属性)<br>表格标题(元素具有 display: table - caption, HTML表格标题默认属性)<br>具有overflow 且值不是 visible 的块元素<br>column - span: all 应当总是会创建一个新的格式化上下文， 即便具有 column - span: all 的元素并不被包裹在一个多列容器中。<br><br>一个块格式化上下文包括创建它的元素内部所有内容， 除了被包含于创建新的块级格式化上下文的后代元素内的元素。 ",
+          "url": "",
+          "ImgExplanation": "通常，我们会利用<span class='K_W'>overflow:不为默认;</span>属性去约束float浮动带来的影响，<br>或者是<span class='K_W'>box-sizing:border-box;</span>解决垂直方向margin重叠问题。"
+        }]
+      }
+    }
+  ]
+}

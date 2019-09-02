@@ -1,0 +1,22 @@
+{
+  "ret": true,
+  "data": {
+    "knowledge": [{
+      "id": 3,
+      "articleList": "callApplyBind.json",
+      "title": "apply、call、bind"
+    }, {
+      "id": 4,
+      "articleList": "gitConflict.json",
+      "title": "git代码"
+    }, {
+      "id": 5,
+      "articleList": "vue.json",
+      "title": "vue"
+    }, {
+      "id": 6,
+      "articleList": "httpSafe.json",
+      "title": "网络安全"
+    }]
+  }
+}
