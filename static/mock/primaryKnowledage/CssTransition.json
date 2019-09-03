@@ -74,5 +74,17 @@
         "ImgExplanation": "注：max-height的值，一定要设置成大于 子菜单总height的值"
       }]
     }
+  }, {
+    "id": 3,
+    "titleList": "loaidng动画样式(1)",
+    "questions": {
+      "question": "本文章由'掘金老姚'率先发出，故只对书写样式收集实现",
+      "answer": [{
+        "answer": "免责声明：本创意由掘金APP，正则迷你书作者'老姚'率先发出。本文章只做整理解析",
+        "explanation": "在网站中使用图片或gif图作为loadiing动画的展示会十分耗费资源，图片的请求代价相比于css原生实现要高许多，所以对于可用css书写的样式尽量考虑到性能问题。<br>话不多说，我们先看一下老姚制作的一张gif图详解",
+        "url": "./static/mock/primaryKnowledage/CssTransitionImg/juejinLaoYao.gif",
+        "ImgExplanation": "核心思想：<br>1.容器内存在四个div块，使得四个div块通过<span class='K_W'>animation</span>动画配合<span class='K_W'>@keyframes</span>属性动起来<br>2.再通过<span class='K_W'>nth-child选择器</span>对不同div实现延迟动画与背景色功能<br>3.为防止四个div超出容器范围，使用<span class='K_W'>overflow：hidden</span>属性隐藏超出部分<br>4.随后使用<span class='K_W'>filter（滤镜）</span>功能实现运动小球的模糊处理<br>5.最后使用<span class='K_W'> :after </span>伪元素添加loading内容，<span class='K_W'>filter-drop-shadow将loading</span>字体映射到小球上层<br><span class='K_W_C'>注意：</span>chirme浏览器下，filter：blur(24px)属性有可能会导致overflow属性失效，此时通过外层包裹块级元素设置position：fixed即可解决"
+      }]
+    }
   }]
 }
