@@ -1,13 +1,11 @@
 {
   "ret": true,
-  "articleList": [
-    {
+  "articleList": [{
       "id": 1,
       "titleList": "网络协议状态码",
       "questions": {
         "question": "请说出什么是状态码？常见的状态码有哪些？",
-        "answer": [
-          {
+        "answer": [{
             "answer": "协议状态码，当我们访问url时提示的反馈，常见的状态吗如下：",
             "explanation": "点击链接：<a class='a_href' href='https://baike.baidu.com/item/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/5053660?fr=aladdin' target='_blank' >百度百科状态码</a>",
             "url": "",
@@ -57,8 +55,7 @@
       "titleList": "http1.x、http2.x、https",
       "questions": {
         "question": "请描述http1.x,http2.x,https之间的区别",
-        "answer": [
-          {
+        "answer": [{
             "answer": "一、Http 1.0 与Http 1.1 的主要区别",
             "explanation": "诞生之初：1.0协议在1996年开始使用，主要用于网页中简单的数据获取，而1.1协议在1999年开始使用,为弥补前者不足，才衍生出了1.1版本。",
             "url": "",
@@ -132,14 +129,12 @@
       "titleList": "url解析",
       "questions": {
         "question": "请描述用户访问url时发生了那些事情？",
-        "answer": [
-          {
-            "answer": "更新ing···",
-            "explanation": "",
-            "url": "",
-            "ImgExplanation": ""
-          }
-        ]
+        "answer": [{
+          "answer": "更新ing···",
+          "explanation": "",
+          "url": "",
+          "ImgExplanation": ""
+        }]
       }
     },
     {
@@ -147,8 +142,7 @@
       "titleList": "httpRequest、Response",
       "questions": {
         "question": "http请求与http响应",
-        "answer": [
-          {
+        "answer": [{
             "answer": "http请求:HTTP协议使用TCP协议进行传输，在应用层协议发起交互之前，首先是TCP的三次握手。完成了TCP三次握手后，客户端会向服务器发出一个请求报文。请求报文",
             "explanation": "请求部分会携带请求方式(option，get，post，head，put，delete，trace等)，请求地址(url)，请求协议(1.0、1.1还是2.0),请求类型(Accept:如果是“/”表示任意类型，如果是指定的类型，则会变成“type/)",
             "url": "",

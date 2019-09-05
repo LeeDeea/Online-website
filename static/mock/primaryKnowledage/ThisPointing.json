@@ -14,14 +14,34 @@
     }
   }, {
     "id": 2,
-    "titleList": "闭包this",
+    "titleList": "控制台输出(1)",
     "questions": {
-      "question": "闭包中this指向问题",
+      "question": "js执行顺序问题",
       "answer": [{
-        "answer": "提上日程",
-        "explanation": "",
-        "url": "",
+        "answer": "请查看如下代码，试着自己说出控制台会打印什么？",
+        "explanation": "请遵循如下口诀<br><span style='color:red'>\"先同步后异步，先微观再宏观\"</span>",
+        "url": "./static/mock/primaryKnowledage/ThisPointingImg/console(1).jpg",
+        "ImgExplanation": "当我们观察这一串的时候我们发现，这其中有<span class='K_W'>setTimeout</span> <span class='K_W'>promise</span> <span class='K_W'>async await</span> <span class='K_W'>console.log</span> 这几种执行代码的方式。那他们具体的执行顺序如何？控制台又输出什么样的结果呢？"
+      }, {
+        "answer": "输出",
+        "explanation": "我们先来看一下控制台输出了什么再来逐一揭晓 ↓",
+        "url": "./static/mock/primaryKnowledage/ThisPointingImg/console(2).jpg",
+        "ImgExplanation": "在代码运行初期，<span class='K_W_C'>setTimeout</span>会被当做<span class='K_W'>异步宏观</span>任务存放在任务队列中，向下执行到<span class='K_W_C'>new promise</span>时，<span class='K_W'>同步任务</span>会将promise中的代码直接输出444与555，resolve()表示promise状态完成，将promise后续的<span class='K_W_C'>.then</span>中的任务放入<span class='K_W'>异步微观</span>队列中，继续向下执行<span class='K_W'>同步任务</span>输出777,进入<span class='K_W_C'>async</span>后，执行<span class='K_W'>同步任务</span>输出test1,随后等待<span class='K_W_C'>test2</span>执行执行完毕，与此同时，第34行中await后续的任务会被放入<span class='K_W'>异步微观</span>队列中，待test2完成后，执行微观队列中的第29行666，随后输出test1 last，再最后是<span class='K_W'>异步宏观</span>任务，<span class='K_W_C'>setTimeout</span>定时器的111与333"
+      }, {
+        "answer": "执行顺序图解",
+        "explanation": "画工粗糙还请见谅，根据总结所述<br><span style='color:red'> \"先同步后异步，先微观再宏观\"</span>",
+        "url": "./static/mock/primaryKnowledage/ThisPointingImg/js执行.png",
         "ImgExplanation": ""
+      }, {
+        "answer": "思考",
+        "explanation": "如果你了解了如上执行顺序，那请看如下图，试着说出控制台会输出什么。",
+        "url": "./static/mock/primaryKnowledage/ThisPointingImg/console思考.jpg",
+        "ImgExplanation": "请用鼠标选中答案后方文字<br>答案: <span style='color:rgba(255,229,100,0.3)'>3 4 6 5 1 2</span>"
+      }, {
+        "answer": "合并",
+        "explanation": "如果将两串代码合并，你还能说得出来会输出什么吗?",
+        "url": "./static/mock/primaryKnowledage/ThisPointingImg/console合并.jpg",
+        "ImgExplanation": "请用鼠标选中答案后方文字<br>答案: <span style='color:rgba(255,229,100,0.3)'>444,555,777,test1,test2,3,4,6,666,'test last',5,111,1,2,333</span>"
       }]
     }
   }]
