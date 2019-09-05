@@ -8,13 +8,13 @@
         "answer": [{
             "answer": "方法一：for循环实现",
             "explanation": "思路：将'点'插入到数字的倒数第三位前并每隔三位加一个'点'",
-            "url": "./static/mock/primaryKnowledage/ArrayImg/千分符1.jpg",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/ThousandSymbol1.jpg",
             "ImgExplanation": ""
           },
           {
             "answer": "方法二：正则表达式",
             "explanation": "思路：使用正则匹配对应位置，添加位置并替换为'点'",
-            "url": "./static/mock/primaryKnowledage/ArrayImg/千分符2.jpg",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/ThousandSymbol2.jpg",
             "ImgExplanation": ""
           }
         ]
@@ -26,10 +26,25 @@
       "questions": {
         "question": "请对arr=['a','a','c','d','e','f','c','a','e']进行去重",
         "answer": [{
-          "answer": "",
-          "explanation": "思路，新建一个数组，遍历传入数组值，值不在新数组中就push进该新数组中",
-          "url": "./static/mock/primaryKnowledage/ArrayImg/数组去重1.jpg",
+          "answer": "第一种",
+          "explanation": "新建一个数组，遍历传入数组值，值不在新数组中就push进该新数组中",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/arrRepeat1.jpg",
           "ImgExplanation": ""
+        }, {
+          "answer": "第二种",
+          "explanation": "使用数组对象reduce()函数进行操作",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/arrRepeat2.jpg",
+          "ImgExplanation": "缺点:如果对数组的reduce()api不熟悉可能会比较难理解"
+        }, {
+          "answer": "第三种",
+          "explanation": "使用ES6中Set()去重",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/arrRepeat3.jpg",
+          "ImgExplanation": "代码可简写：[...new Set(arr)]<br>缺点:es6方法，考虑兼容性问题，并且该方法无法去除\"{}\"空对象"
+        }, {
+          "answer": "第四种",
+          "explanation": "使用数组filter()函数去重",
+          "url": "./static/mock/primaryKnowledage/ArrayImg/arrRepeat4.jpg",
+          "ImgExplanation": "注:filter() 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。"
         }]
       }
     },
@@ -41,25 +56,25 @@
         "answer": [{
             "answer": "1.1递归思维-for-!isArray-recursion",
             "explanation": "思路：新建数组，遍历传入的数组值，判断是否为数组类型，是则push进新数组，否则执行递归方法，对递归后的数组进行concat合并操作",
-            "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍.jpg",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/ArraySplitting1.jpg",
             "ImgExplanation": "该方法中，newArr变量一直存在，为防止污染需及时清空"
           },
           {
             "answer": "1.2递归思维-for-typeof-instanceof-recursion",
             "explanation": "思路：新建数组，遍历传入的数组值，判断是否为Number类型，是则push进新数组，否则执行是否为array类型，对递归后的数组进行concat合并操作",
-            "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍3.jpg",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/ArraySplitting3.jpg",
             "ImgExplanation": "该方法适用于数字平铺，如想将字符串平铺需进行改进"
           },
           {
             "answer": "1.3递归思维-while-prototype-some-concat-apply",
             "explanation": "思路：通过while循环中array.some方法判断数组中元素是否为数组，再对元素进行合并操作",
-            "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍4.jpg",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/ArraySplitting4.jpg",
             "ImgExplanation": "该方法的关键，1.使用Array.some方法作为循环条件，2.利用数组原型链进行合并操作，"
           },
           {
             "answer": "2.正则思想",
             "explanation": "思路：将数组转为字符串，利用正则表达式replace方法替换字符串内的中括号，在将字符串转为数组",
-            "url": "./static/mock/primaryKnowledage/ArrayImg/数组平拍2.jpg",
+            "url": "./static/mock/primaryKnowledage/ArrayImg/ArraySplitting2.jpg",
             "ImgExplanation": "该方法虽然代码少，逻辑清晰，但原题对数组中类型如有严格要求，要及时转换。"
           }
         ]
