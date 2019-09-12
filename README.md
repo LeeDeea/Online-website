@@ -2,7 +2,7 @@
 
 这个题库blog是我在9102年5月份的一个构思， 由于时间有限更新会比较缓慢，但我会加油更新的！(๑•̀ㅂ•́)و✧！！！
 
-如果您对该blog有兴趣，请访问在线地址点击→：[题库分析blog地址~](https://leedeea.github.io/Online-website/#/)
+如果您对该blog有兴趣，请访问在线地址点击→：[https://github.com/LeeDeea/Online-website](https://leedeea.github.io/Online-website/#/)
 
 * 作品截图
 
