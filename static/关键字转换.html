@@ -18,11 +18,21 @@
     <textarea id="know" shape="40" coords="40" href="" alt=""></textarea>
     <input id="addKW">
   </div>
-  <input onclick="btn()" type="button" value="提交">
+  <input onclick="btn()" type="button" value="转化换行">
   <input onclick="deleteKW()" type="button" value="删除关键字">
+  <input onclick="addKW()" type="button" value="添加关键字K_W">
 </body>
 <script scorde>
-  function deleteKW() {
+  function btn () {
+    var know = document.getElementById('know')
+    var knowVal = know.value;
+    var knowValNoN = knowVal.replace(/\n/g, "<br>")
+    var knowValNoPoint = knowValNoN.replace(/\n/g, "<br>")
+    var finish = knowValNoPoint.replace(/\s/g, "");
+    console.log(finish)
+  }
+
+  function deleteKW () {
     var know = document.getElementById('addKW')
     var knowVal = know.value;
     var knows = document.getElementById('know')
@@ -31,13 +41,16 @@
     knows.value += knowVal;
     console.log(`<span class='K_W'>${knowVal}</span>`);
   }
-  function btn() {
-    var know = document.getElementById('know')
-    var knowVal = know.value;
-    var knowValNoN = knowVal.replace(/\n/g, "<br>")
-    var knowValNoPoint = knowValNoN.replace(/\n/g, "<br>")
-    var finish = knowValNoPoint.replace(/\s/g, "");
-    console.log(finish)
+  
+  function addKW () {
+  	var know = document.getElementById('addKW');
+    knowVal = know.value;
+    knowValArr = knowVal.split("，")
+    for(let i = 0; i < knowValArr.length; i++){
+    	knowValArr[i] = knowValArr[i].replace(knowValArr[i],`<span class='K_W'>${knowValArr[i]}</span>`)
+    }
+    knowValArr = knowValArr.join();
+    console.log(knowValArr)
   }
 </script>
 

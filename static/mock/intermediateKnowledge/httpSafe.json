@@ -4,24 +4,24 @@
     "id": 1,
     "titleList": "CSRF攻击",
     "questions": {
-      "question": "暂无解析",
+      "question": "CSRF（Cross-site request forgery）跨站请求伪造",
       "answer": [{
-        "answer": "",
-        "explanation": "",
-        "url": "",
-        "ImgExplanation": ""
+        "answer": "CSRF全称（Cross-site request forgery）跨站请求伪造",
+        "explanation": "它与XSS非常不同，XSS利用站点内的信任用户，而CSRF则通过伪装成受信任用户的请求来利用受信任的网站。与XSS攻击相比，CSRF攻击往往不大流行（因此对其进行防范的资源也相当稀少）和难以防范，所以被认为比XSS更具危险性。",
+        "url": "./static/mock/intermediateKnowledge/httpSafeImg/CSRF.jpg",
+        "ImgExplanation": "攻击通过在授权用户访问的页面中包含链接或者脚本的方式工作。例如：一个网站用户Bob可能正在浏览聊天论坛，而同时另一个用户Alice也在此论坛中，并且后者刚刚发布了一个具有Bob银行链接的图片消息。设想一下，Alice编写了一个在Bob的银行站点上进行取款的form提交的链接，并将此链接作为图片src。如果Bob的银行在cookie中保存他的授权信息，并且此cookie没有过期，那么当Bob的浏览器尝试装载图片时将提交这个取款form和他的cookie，这样在没经Bob同意的情况下便授权了这次事务。<br>CSRF是一种依赖web浏览器的、被混淆过的代理人攻击（deputy attack）。在上面银行示例中的代理人是Bob的web浏览器，它被混淆后误将Bob的授权直接交给了Alice使用。"
       }]
     }
   }, {
     "id": 2,
     "titleList": "XSS攻击",
     "questions": {
-      "question": "暂无解析",
+      "question": "XSS （Cross Site Scripting）跨站脚本攻击",
       "answer": [{
-        "answer": "",
-        "explanation": "",
-        "url": "",
-        "ImgExplanation": ""
+        "answer": "XSS全称（Cross Site Scripting）跨站脚本攻击",
+        "explanation": "为了不和层叠样式表(Cascading Style Sheets, CSS)的缩写混淆，故将跨站脚本攻击缩写为XSS。恶意攻击者往Web页面里插入恶意的Script代码，当用户浏览该页之时，嵌入其中Web里面的Script代码会被执行，从而达到恶意攻击用户的目的。",
+        "url": "./static/mock/intermediateKnowledge/httpSafeImg/XSS.jpg",
+        "ImgExplanation": "XSS攻击分成两类， 一类是来自内部的攻击， 主要指的是利用程序自身的漏洞， 构造跨站语句， 如: dvbbs的showerror.asp存在的跨站漏洞。 <br>另一类则是来自外部的攻击，主要指的自己构造XSS跨站漏洞网页或者寻找非目标机以外的有跨站漏洞的网页。如当我们要渗透一个站点，我们自己构造一个有跨站漏洞的网页，然后构造跨站语句，通过结合其它技术，如社会工程学等，欺骗目标服务器的管理员打开。"
       }]
     }
   }]

@@ -1,13 +1,11 @@
 {
   "ret": true,
-  "articleList": [
-    {
+  "articleList": [{
       "id": 1,
       "titleList": "网络协议状态码",
       "questions": {
         "question": "请说出什么是状态码？常见的状态码有哪些？",
-        "answer": [
-          {
+        "answer": [{
             "answer": "协议状态码，当我们访问url时提示的反馈，常见的状态吗如下：",
             "explanation": "点击链接：<a class='a_href' href='https://baike.baidu.com/item/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/5053660?fr=aladdin' target='_blank' >百度百科状态码</a>",
             "url": "",
@@ -57,8 +55,7 @@
       "titleList": "http1.x、http2.x、https",
       "questions": {
         "question": "请描述http1.x,http2.x,https之间的区别",
-        "answer": [
-          {
+        "answer": [{
             "answer": "一、Http 1.0 与Http 1.1 的主要区别",
             "explanation": "诞生之初：1.0协议在1996年开始使用，主要用于网页中简单的数据获取，而1.1协议在1999年开始使用,为弥补前者不足，才衍生出了1.1版本。",
             "url": "",
@@ -132,14 +129,37 @@
       "titleList": "url解析",
       "questions": {
         "question": "请描述用户访问url时发生了那些事情？",
-        "answer": [
-          {
-            "answer": "更新ing···",
-            "explanation": "",
-            "url": "",
-            "ImgExplanation": ""
-          }
-        ]
+        "answer": [{
+          "answer": "当我们在浏览器上方输入完URL回车访问后，会经历如下步骤",
+          "explanation": "",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "第一步",
+          "explanation": "<span class='K_W'>DNS域名解析</span>，我们输入的url会<span class='K_W'>转化为目标ip地址</span>（如输入ip地址则不需要转化）。此时最<span class='K_W'>先查找缓存</span>，依次查找当前浏览器，操作系统与路由中是否存在缓存。",
+          "url": "",
+          "ImgExplanation": "如若没有缓存信息则进行递归查询向上（通过路由器进入上层网络查找）查找对应域名的IP地址"
+        }, {
+          "answer": "第二步",
+          "explanation": "当确定IP地址后会发送<span class='K_W'>TCP的三次握手</span>实现通信，随后<span class='K_W'>发送HTTP请求</span>获取对应路径下的数据，此时，如果服务器做了<span class='K_W'>负载均衡</span>操作，有可能会导致<span class='K_W'>服务器重定向问题</span>，此时根据新IP执行查询",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "第三步",
+          "explanation": "服务器响应HTTP请求返回数据。若HTTP无<span class='K_W'>长连接</span>状态，则进行span class='K_W'>四次挥手</span>断开TCP链接",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "第四步",
+          "explanation": "客户端接收数据，<span class='K_W'>渲染</span>页面展示",
+          "url": "",
+          "ImgExplanation": ""
+        }, {
+          "answer": "结束",
+          "explanation": "至此，一次完整的url请求访问就达成了。不过这当中存在许多要注意的细节点",
+          "url": "",
+          "ImgExplanation": "如：<span class='K_W_C'>DNS域名解析过程</span>,<span class='K_W_C'>浏览器的强缓存与协商缓存的区别</span>,<span class='K_W_C'>TCP三次握手原理</span>,<span class='K_W_C'>HTTP请求头与请求体包含哪些</span>,<span class='K_W_C'>什么是负载均衡</span>,<span class='K_W_C'>什么是长连接</span>,<span class='K_W_C'>断开连接为什么是四次握手,浏览器渲染原理等。</span>"
+        }]
       }
     },
     {
@@ -147,9 +167,8 @@
       "titleList": "httpRequest、Response",
       "questions": {
         "question": "http请求与http响应",
-        "answer": [
-          {
-            "answer": "http请求:HTTP协议使用TCP协议进行传输，在应用层协议发起交互之前，首先是TCP的三次握手。完成了TCP三次握手后，客户端会向服务器发出一个请求报文。请求报文",
+        "answer": [{
+            "answer": "http请求:HTTP协议使用TCP协议进行传输，在应用层协议发起交互之前，首先是TCP的三次握手。完成了TCP三次握手后，客户端会向服务器发出一个请求报文。",
             "explanation": "请求部分会携带请求方式(option，get，post，head，put，delete，trace等)，请求地址(url)，请求协议(1.0、1.1还是2.0),请求类型(Accept:如果是“/”表示任意类型，如果是指定的类型，则会变成“type/)",
             "url": "",
             "ImgExplanation": ""
@@ -158,6 +177,12 @@
             "answer": "http响应:当服务器收到get或post又或其他请求后，服务器会对报文进行响应，同样，响应报文也分为响应头与响应体",
             "explanation": "请求头的前两行为称为状态行，状态行返回了服务器的http版本，以及一个响应代码,即状态码。剩余部分为请求返回的数据，包括请求数据，cookie等",
             "url": "",
+            "ImgExplanation": ""
+          },
+          {
+            "answer": "图示",
+            "explanation": "通过开发者工具我们可以很清楚看到相应头与体包含哪些",
+            "url": "./static/mock/primaryKnowledage/HttpImg/Response_Request.jpg",
             "ImgExplanation": ""
           }
         ]

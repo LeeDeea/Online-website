@@ -1,19 +1,16 @@
 {
   "ret": true,
-  "articleList": [
-    {
+  "articleList": [{
       "id": 1,
       "titleList": "什么是ajax",
       "questions": {
         "question": "什么是ajax",
-        "answer": [
-          {
-            "answer": "ajax是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。",
-            "explanation": "优势：ajax无需重复加载网页，可极大的节约网页性能。如下是百度词条定义:",
-            "url": "./static/mock/primaryKnowledage/AjaxImg/原生ajax.jpg",
-            "ImgExplanation": "<span class='K_W'>ajax</span>的使用非常频繁，掌握ajax是<span class='K_W'>前端工程师的必修</span>"
-          }
-        ]
+        "answer": [{
+          "answer": "ajax是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。",
+          "explanation": "优势：ajax无需重复加载网页，可极大的节约网页性能。如下是百度词条定义:",
+          "url": "./static/mock/primaryKnowledage/AjaxImg/原生ajax.jpg",
+          "ImgExplanation": "<span class='K_W'>ajax</span>的使用非常频繁，掌握ajax是<span class='K_W'>前端工程师的必修</span>"
+        }]
       }
     },
     {
@@ -21,14 +18,12 @@
       "titleList": "ajax实现过程",
       "questions": {
         "question": "原生ajax是如何实现的",
-        "answer": [
-          {
-            "answer": "ajax底层使用的是XMLHttpReques,通过发出请求验证请求是否通过以及接受callback回调函数获取数据",
-            "explanation": "下图为原生ajax的:get方法与post方法实现",
-            "url": "./static/mock/primaryKnowledage/AjaxImg/ajax是如何实现的.jpg",
-            "ImgExplanation": "<span class='K_W'>get与post:</span>是两种获取数据的方式，post相对更安全<br>ajax有三种状态<br><span class='K_W'> open:</span>打开端口确定请求方法，请求路径，请求是否为异步<br><span class='K_W'>readyState:</span>请求等待，这一步的if出现错误则判定是否为网络或服务器端问题<br><span class='K_W'>send:</span>发送本次请求<br><span class='K_W'>fn.call (this,xhr.responseText):</span>数据获取后调用外部fn方法"
-          }
-        ]
+        "answer": [{
+          "answer": "ajax底层使用的是XMLHttpReques,通过发出请求验证请求是否通过以及接受callback回调函数获取数据",
+          "explanation": "下图为原生ajax的:get方法与post方法实现",
+          "url": "./static/mock/primaryKnowledage/AjaxImg/ajax是如何实现的.jpg",
+          "ImgExplanation": "<span class='K_W'>get与post:</span>是两种获取数据的方式，post相对更安全<br>ajax有三种状态<br><span class='K_W'> open:</span>打开端口确定请求方法，请求路径，请求是否为异步<br><span class='K_W'>readyState:</span>请求等待，这一步的if出现错误则判定是否为网络或服务器端问题<br><span class='K_W'>send:</span>发送本次请求<br><span class='K_W'>fn.call (this,xhr.responseText):</span>数据获取后调用外部fn方法"
+        }]
       }
     },
     {
@@ -36,14 +31,12 @@
       "titleList": "ajax的封装(jq)",
       "questions": {
         "question": "jq封装ajax写法",
-        "answer": [
-          {
-            "answer": "jq封装了ajax的写法使得我们只需要传入url地址与、请求类型、请求信息、并等待回调函数callback将数据返回",
-            "explanation": "下图为JQ封装的ajax发起流程:",
-            "url": "./static/mock/primaryKnowledage/AjaxImg/ajax的封装(jq).jpg",
-            "ImgExplanation": "<span><span class='K_W'>$.ajax():</span>开始一个ajax请求<br><span class='K_W'>url:</span>请求的地址路径(可相对可绝对)<br><span class='K_W'>type:</span>get或者post<br><span class='K_W'>dataType:</span>接受返回的数据类型<br><span class='K_W'>success:</span>function(res){}:请求成功后接受数据参数res并执行方法，这里的res是服务器返回来的数据，一般使用json，或对象格式</span>"
-          }
-        ]
+        "answer": [{
+          "answer": "jq封装了ajax的写法使得我们只需要传入url地址与、请求类型、请求信息、并等待回调函数callback将数据返回",
+          "explanation": "下图为JQ封装的ajax发起流程:",
+          "url": "./static/mock/primaryKnowledage/AjaxImg/ajax的封装(jq).jpg",
+          "ImgExplanation": "<span><span class='K_W'>$.ajax():</span>开始一个ajax请求<br><span class='K_W'>url:</span>请求的地址路径(可相对可绝对)<br><span class='K_W'>type:</span>get或者post<br><span class='K_W'>dataType:</span>接受返回的数据类型<br><span class='K_W'>success:</span>function(res){}:请求成功后接受数据参数res并执行方法，这里的res是服务器返回来的数据，一般使用json，或对象格式</span>"
+        }]
       }
     },
     {
@@ -51,14 +44,12 @@
       "titleList": "ajax的封装(vue)",
       "questions": {
         "question": "vue封装ajax写法",
-        "answer": [
-          {
-            "answer": "vue中利用promise封装好的ajax：axios",
-            "explanation": "axios由promise封装，使得它的用法更加简洁方便",
-            "url": "",
-            "ImgExplanation": "更新ing···"
-          }
-        ]
+        "answer": [{
+          "answer": "vue中利用promise封装好的ajax：axios",
+          "explanation": "axios由promise封装，使得它的用法更加简洁方便",
+          "url": "",
+          "ImgExplanation": "此处推荐幕课网的一门axios的课地址如下<a class='K_W_C' href='https://www.imooc.com/learn/1152'> ——> axios在vue中的使用</a>"
+        }]
       }
     }
   ]

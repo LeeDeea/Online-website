@@ -1,8 +1,7 @@
 {
   "ret": true,
   "data": {
-    "knowledge": [
-      {
+    "knowledge": [{
         "id": 1,
         "articleList": "Layout.json",
         "title": "布局方式"
@@ -48,18 +47,5 @@
         "title": "数据结构"
       }
     ]
-  },
-  "test": [
-    {
-      "answer": "",
-      "explanation": "",
-      "url": "",
-      "ImgExplanation": ""
-    },
-    {
-      "id": 14,
-      "articleList": "WebSEO.json",
-      "title": "网站seo"
-    }
-  ]
+  }
 }
