@@ -7,7 +7,7 @@
         "question": "this指向",
         "answer": [{
           "answer": "this指向",
-          "explanation": "this指向当前函数的作用域，如window，function等通过存储this指向（如：var that = this）可在函数中使用访问其他函数作用于（如：that.data）,箭头函数没有作用域，其this指向包裹箭头函数的环境（如window，function）",
+          "explanation": "<span class='K_W'>this指向调用当前函数</span>的作用域，即，谁调用该函数，作用域为谁。如，全局定义function函数，函数内作用域为window全局<br><span class='K_W'>小技巧</span>：window，function等通过存储this指向（如：var that = this）可在函数中访问其他函数作用于（如函数内使用：that.data）<br><span class='K_W'>箭头函数本身没有作用域</span>其this指向包裹箭头函数的环境（如window，function）等",
           "url": "",
           "ImgExplanation": ""
         }]
@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "titleList": "控制台输出(1)",
+      "titleList": "控制台输出(1)执行顺序",
       "questions": {
         "question": "js执行顺序问题",
         "answer": [{
@@ -49,6 +49,23 @@
             "ImgExplanation": "请用鼠标选中答案后方文字<br>答案: <span style='color:rgba(255,229,100,0.3)'>444,555,777,test1,test2,3,4,6,666,'test last',5,111,1,2,333</span>"
           }
         ]
+      }
+    }, {
+      "id": 3,
+      "titleList": "控制台输出(2)原型链",
+      "questions": {
+        "question": "js原型链挂载相关",
+        "answer": [{
+          "answer": "请指出如下代码的输出",
+          "explanation": "这里我将最后的三个输出答案写在了后面的注释里。大家可以试着去理解这三个输出",
+          "url": "./static/mock/primaryKnowledage/ThisPointingImg/console.log(2-1).jpg",
+          "ImgExplanation": "题目中定义了三个函数分别为C1、C2、C3，随后为每一个函数的原型链上挂载了一个name属性并赋值。"
+        }, {
+          "answer": "控制台输出",
+          "explanation": "我们可以看到如下输出",
+          "url": "./static/mock/primaryKnowledage/ThisPointingImg/console.log(2-2).jpg",
+          "ImgExplanation": "我们先看一下这段代码<span class='K_W'>console.log(new C1().name)</span><br>首先<span class='K_W'>new C1() </span>会创建一个C1实例，随后去寻找<span class='K_W'>.name</span>属性<br>C1：由于C1函数中并没有<span class='K_W'>name</span>属性，所以不走<span class='K_W'>if</span>语句之后的内容也就不存在<span class='K_W'>this.name</span>值，并向<span class='K_W'>原型链</span>中查找相关<span class='K_W'>name</span>属性<br>C2：由于C2函数中对<span class='K_W'>this.name</span>进行了赋值，但并没有<span class='K_W'>name</span>值，所以此处为<span class='K_W'>undefined</span><br>C3：同C2但此时的<span class='K_W'>name</span>有默认值<span class='K_W'>‘sam’</span>"
+        }]
       }
     }
   ]
