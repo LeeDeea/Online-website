@@ -62,7 +62,7 @@
       "questions": {
         "question": "请实现高度已知100px，左右各为300px宽度的侧边栏，中间自适应的布局",
         "answer": [{
-            "answer": "解析：该题目考察布局的基础知识，圣杯1布局是相对比较老的题目了，因为现在有更多的布局方式可以实现这样的效果，不过这并不影响它作为经典试题的原因",
+            "answer": "解析：该题目考察布局的基础知识，圣杯布局是相对比较老的题目了，因为现在有更多的布局方式可以实现这样的效果，不过这并不影响它作为经典试题的原因",
             "explanation": "如下图所示：左右300px中间自适应",
             "url": "./static/mock/primaryKnowledage/LayoutImg/左右固定中间自适应.jpg",
             "ImgExplanation": "三栏布局为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。<br><span class='K_W'>左</span>300px,<span class='K_W'>中间</span>自适应，<span class='K_W'>右</span>300px"
@@ -70,19 +70,19 @@
           {
             "answer": "1.使用float浮动布局",
             "explanation": "首先我们使用左右浮动的效果达成三栏布局：代码如下（注意标签语义化）",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-dom.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei1-dom.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
           },
           {
             "answer": "2.对项目进行初始化样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei1-init.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式</span><br>初始化高度<span class='K_W'>100px</span>"
           },
           {
             "answer": "3.添加浮动样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-style.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei1-style.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>左右设置浮动，中间不设置宽度"
           },
           {
@@ -94,7 +94,7 @@
           {
             "answer": "延展问题：",
             "explanation": "倘若我们侧边栏的高度不一致，则float布局会存在一定的问题，如图所示",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-problem.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei1-problem.jpg",
             "ImgExplanation": "我们发现当<b>左边高度减少时</b>，中间自适应的高度向左侵蚀了，原因是:<span class='K_W_C'>左边红色区域的float会使左边区域脱离文档流</span>"
           },
           {
@@ -120,19 +120,19 @@
           {
             "answer": "1.使用position绝对定位",
             "explanation": "首先我们为父元素设置relative属性，为子元素设置absolute：代码如下（注意标签语义化）",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-dom.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei2-dom.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
           },
           {
             "answer": "2.对项目进行初始化样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei1-init.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
           },
           {
             "answer": "3.添加定位样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-style.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei2-style.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级relative，子元素绝对定位"
           },
           {
@@ -144,7 +144,7 @@
           {
             "answer": "延展问题：",
             "explanation": "倘若我们侧边栏的高度不一致，则position布局会存在一定的问题，如图所示",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯2-problem.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei2-problem.jpg",
             "ImgExplanation": "我们的布局后边其实是有一串123456的数字的，但是并没有显示<br>原因是:<span class='K_W_C'>position会使得元素脱离文档流从而覆盖了下方的字符串123456</span>"
           },
           {
@@ -170,19 +170,19 @@
           {
             "answer": "1.使用table表格布局",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯3-dom.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei3-dom.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
           },
           {
             "answer": "2.对项目进行初始化样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei1-init.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
           },
           {
             "answer": "3.添加table样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯3-style.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei3-style.jpg",
             "ImgExplanation": "我们为父元素设置<span class='K_W'>display：table</span>属性，并对下属的div子元素设置了<span class='K_W'>display：table-cell</span>属性，以此达到三栏布局效果"
           },
           {
@@ -194,7 +194,7 @@
           {
             "answer": "延展问题：",
             "explanation": "虽然table布局兼容性很好，但是会有一些设计上的小问题，如图",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯3-problem.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei3-problem.jpg",
             "ImgExplanation": "对<span class='K_W'>左中右</span>任意元素设置高度时，会使得三个元素的高度统一为最大高度。（图中为黄色区域设置了200px的高度，使得红色与蓝色区域的100px高度显示为200px）"
           }
         ]
@@ -214,19 +214,19 @@
           {
             "answer": "1.使用flex布局",
             "explanation": "首先我们为父元素设置flex属性，代码如下（注意标签语义化）",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯4-dom.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei4-dom.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
           },
           {
             "answer": "2.对项目进行初始化样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei1-init.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
           },
           {
             "answer": "3.添加flex样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯4-style.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei4-style.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级成为flex，为子元素两侧设置宽度，中间利用<span class='K_W'>flex:1</span>实现自适应撑开高度"
           },
           {
@@ -258,19 +258,19 @@
           {
             "answer": "1.使用grid网格布局",
             "explanation": "首先我们对父元素进行display：grid属性设置",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯5-dom.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei5-dom.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>dom</span>结构"
           },
           {
             "answer": "2.对项目进行初始化样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯1-init.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei1-init.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>初始化样式，因为浏览器默认对一些标签施加默认样式(注意:切忌在工程项目中使用*号通配符改变样式  )</span><br>初始化高度<span class='K_W'>100px</span>"
           },
           {
             "answer": "3.添加grid样式",
             "explanation": "",
-            "url": "./static/mock/primaryKnowledage/LayoutImg/圣杯5-style.jpg",
+            "url": "./static/mock/primaryKnowledage/LayoutImg/shengbei5-style.jpg",
             "ImgExplanation": "这是我们的<span class='K_W'>元素样式</span>父级relative，子元素绝对定位"
           },
           {
