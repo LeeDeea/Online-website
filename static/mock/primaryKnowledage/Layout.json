@@ -9,7 +9,7 @@
             "answer": "flex弹性布局是2009年W3C提出的一种新型的布局方式，由display:flex属性将标签设置为flex容器（注:设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。）",
             "explanation": "使用flex布局可以避免传统盒子模型中使用position,float等带来的如:文档流，或者清除浮动，垂直居中等，flex布局发展至今已得到绝大多数浏览器的支持",
             "url": "",
-            "ImgExplanation": ""
+            "ImgExplanation":"<a class='a_href' href='http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool'>原地址传送门</a>"
           },
           {
             "answer": "一、了解flex布局的轴概念",

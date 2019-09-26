@@ -19,7 +19,7 @@
       "question": "使用正则表达式筛选电话号码",
       "answer": [{
         "answer": "下面这段代码用于验证是否符合电话号码规范",
-        "explanation": "if(!(<span class='K_W'>/^1[3456789]\\d{9}$/.test(phone)</span>)) { alert(\"请输入正确的电话号码~\")}",
+        "explanation": "if(!(<span style='display:inline;'s class='K_W'>/^1[3456789]\\d{9}$/.test(phone)</span>)) { alert(\"请输入正确的电话号码~\")}",
         "url": "",
         "ImgExplanation": "判断输入是否符合‘1开头的3456789跟进的十一位电话号码’"
       }]
@@ -31,7 +31,7 @@
       "question": "使用正则表达式筛选邮箱",
       "answer": [{
         "answer": "下面这段代码用于验证是否符合邮箱规范",
-        "explanation": "if(!(<span class='K_W'>/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$/.test(phone)</span>)) { alert(\"请输入正确的邮箱号码~\")}",
+        "explanation": "if(!(<span style='display:inline;' class='K_W'>/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$/.test(phone)</span> ) ) { alert(\"请输入正确的邮箱号码~\")}",
         "url": "",
         "ImgExplanation": "判断输入是否符合‘名称@域名’的格式"
       }]

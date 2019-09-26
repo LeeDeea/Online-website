@@ -9,6 +9,11 @@
         "answer": "请看下图",
         "explanation": "call与apply的参数不同，直接使用。bind是apply做的封装，返回一个函数。",
         "url": "./static/mock/intermediateKnowledge/callApplyBindImg/CallApplyBindDescribe.jpg",
+        "ImgExplanation": "CallApplyBindDescribeAnswer.jpg"
+      }, {
+        "answer": "控制台输出",
+        "explanation": "",
+        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/CallApplyBindDescribeAnswer.jpg",
         "ImgExplanation": ""
       }]
     }
