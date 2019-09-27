@@ -40,11 +40,6 @@
         "id": 12,
         "articleList": "http.json",
         "title": "Http协议"
-      },
-      {
-        "id": 13,
-        "articleList": "DataStructures.json",
-        "title": "数据结构"
       }
     ]
   }
