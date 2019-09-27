@@ -1,57 +1,71 @@
 {
   "ret": true,
-  "articleList": [{
-    "id": 1,
-    "titleList": "call、apply、bind",
-    "questions": {
-      "question": "三者区别",
-      "answer": [{
-        "answer": "请看下图",
-        "explanation": "call与apply的参数不同，直接使用。bind是apply做的封装，返回一个函数。",
-        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/CallApplyBindDescribe.jpg",
-        "ImgExplanation": "CallApplyBindDescribeAnswer.jpg"
-      }, {
-        "answer": "控制台输出",
-        "explanation": "",
-        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/CallApplyBindDescribeAnswer.jpg",
-        "ImgExplanation": ""
-      }]
+  "articleList": [
+    {
+      "id": 1,
+      "titleList": "call、apply、bind",
+      "questions": {
+        "question": "三者区别",
+        "answer": [
+          {
+            "answer": "请看下图",
+            "explanation": "call与apply的参数不同，直接使用。bind是apply做的封装，返回一个函数。",
+            "url": "./static/mock/intermediateKnowledge/callApplyBindImg/CallApplyBindDescribe.jpg",
+            "ImgExplanation": "区别：<br>call函数传入参数的形式用“，”或“[]”相隔开<br>Sapply函数则输入的参数为数组类型“[]”中包裹参数即可<br>bind函数属于apply的封装写法，主要用于区别构造函数"
+          },
+          {
+            "answer": "控制台输出",
+            "explanation": "",
+            "url": "./static/mock/intermediateKnowledge/callApplyBindImg/CallApplyBindDescribeAnswer.jpg",
+            "ImgExplanation": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "titleList": "手写apply函数",
+      "questions": {
+        "question": "手写apply函数",
+        "answer": [
+          {
+            "answer": "",
+            "explanation": "",
+            "url": "./static/mock/intermediateKnowledge/callApplyBindImg/writeApply.jpg",
+            "ImgExplanation": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "titleList": "手写call函数",
+      "questions": {
+        "question": "手写call函数",
+        "answer": [
+          {
+            "answer": "",
+            "explanation": "",
+            "url": "./static/mock/intermediateKnowledge/callApplyBindImg/writeCall.jpg",
+            "ImgExplanation": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "titleList": "手写bind函数",
+      "questions": {
+        "question": "手写bind函数",
+        "answer": [
+          {
+            "answer": "",
+            "explanation": "",
+            "url": "./static/mock/intermediateKnowledge/callApplyBindImg/writeBind.jpg",
+            "ImgExplanation": ""
+          }
+        ]
+      }
     }
-  }, {
-    "id": 2,
-    "titleList": "手写call函数",
-    "questions": {
-      "question": "手写call函数",
-      "answer": [{
-        "answer": "",
-        "explanation": "",
-        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/writeApply.jpg",
-        "ImgExplanation": ""
-      }]
-    }
-  }, {
-    "id": 3,
-    "titleList": "手写apply函数",
-    "questions": {
-      "question": "手写apply函数",
-      "answer": [{
-        "answer": "",
-        "explanation": "",
-        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/writeCall.jpg",
-        "ImgExplanation": ""
-      }]
-    }
-  }, {
-    "id": 4,
-    "titleList": "手写bind函数",
-    "questions": {
-      "question": "手写bind函数",
-      "answer": [{
-        "answer": "",
-        "explanation": "",
-        "url": "./static/mock/intermediateKnowledge/callApplyBindImg/writeBind.jpg",
-        "ImgExplanation": ""
-      }]
-    }
-  }]
+  ]
 }
