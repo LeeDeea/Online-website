@@ -6,11 +6,36 @@
       "questions": {
         "question": "什么是vuex？vuex能做什么？",
         "answer": [{
-          "answer": "vuex官方定义为公用存储仓库，用于解决组件间复杂传值的一种解决方案",
-          "explanation": "To be continued...",
-          "url": "",
-          "ImgExplanation": ""
-        }]
+            "answer": "vuex官方将其定义为公用状态存储仓库，是解决组件间复杂传值的一种解决方案",
+            "explanation": "阅读过官方文档的同学应该知道，vue中组件之间的传值很有讲究，相对来讲父子组件之间的传值很常用,可非父子关系的组件要如何传值才更方便快捷呢？那么本次所要梳理的主题就是vue中重要的组件传值方式VueX",
+            "url": "./static/mock/intermediateKnowledge/vueImg/vuex.png",
+            "ImgExplanation": "接下来我们会解析这张图所看到的各个属性<br>首先是<span class='K_W'>虚线部分</span>：<br><span class='K_W'>state属性</span>：存放我们所使用的公用状态,如var state = { city: value }这样我们就定义了一个仓库<br><span class='K_W'>mutations属性</span>:存放已经写好的一些函数，用于改变state属性值(该方法为同步)<br><span class='K_W'>actions属性</span>：该属性会调用mutations中的一些方法(获取或修改数)，主要通过组件中的函数触发(该方法为异步)<br>然后是<span class='K_W'>实线部分</span>：<br>vue组件通过书写dispath调用actions，actions本身会触发commit方法来执行mutations函数的对应方法，mutations触发mutate来修改state仓库中的数据，state中的数据被修改，会触发vue中的render函数实现组件中的数据变化。"
+          },
+          {
+            "answer": "仓库示例",
+            "explanation": "",
+            "url": "./static/mock/intermediateKnowledge/vueImg/sateRepository.jpg",
+            "ImgExplanation": "仓库结构，<span class='K_W'>actions</span>与<span class='K_W'>mutations</span>函数均可修改<span class='K_W'>state</span>的值，只不过我这里通过异步的actions去调用了同步的mutations"
+          },
+          {
+            "answer": "获取与改变state代码示例",
+            "explanation": "",
+            "url": "./static/mock/intermediateKnowledge/vueImg/vuexChangeRun.jpg",
+            "ImgExplanation": "获取的两种方式，同步修改，异步修改"
+          },
+          {
+            "answer": "vue官方简单库",
+            "explanation": "上面书写的代码是不是太冗余了？好在官方提供了四种快捷触发的方法",
+            "url": "./static/mock/intermediateKnowledge/vueImg/importMapFn.jpg",
+            "ImgExplanation": "分别为<span class='K_W'>{mapState, mapMutations, mapActions, mapGetters}</span><br>我们只需要import引入单个或多个方法，在函数中就可以直接使用了"
+          },
+          {
+            "answer": "快捷使用",
+            "explanation": "",
+            "url": "./static/mock/intermediateKnowledge/vueImg/useMapFn.jpg",
+            "ImgExplanation": "三个点是ES6的扩展运算符，不了解的同学可以阅读以下阮一峰老师的es6教程网页版"
+          }
+        ]
       }
     },
     {

@@ -14,7 +14,7 @@
         "answer": "1.Git 开发常用命令",
         "explanation": "<h3>查看、添加、提交、删除、找回，重置修改文件</h3>",
         "url": "",
-        "ImgExplanation": "git help command # 显示command的help<br>git show # 显示某次提交的内容 git show $id<br>git co -- file # 抛弃工作区修改<br>git co . # 抛弃工作区修改<br>git add file # 将工作文件修改提交到本地暂存区<br>git add . # 将所有修改过的工作文件提交暂存区<br>git rm file # 从版本库中删除文件<br>git rm file --cached # 从版本库中删除文件，但不删除文件<br>git reset file # 从暂存区恢复到工作文件<br>git reset -- . # 从暂存区恢复到工作文件<br>git reset --hard # 恢复最近一次提交过的状态，即放弃上次提交后的所有本次修改<br>git ci file git ci . git ci -a # 将git add, git rm和git ci等操作都合并在一起做<br>git ci --amend # 修改最后一次提交记录<br>git revert $id # 恢复某次提交的状态，恢复动作本身也创建次提交对象<br>git revert HEAD # 恢复最后一次提交的状态"
+        "ImgExplanation": "git help command # 显示command的help<br>git show # 显示某次提交的内容 git show $id<br>git add file # 将工作文件修改提交到本地暂存区<br>git add . # 将所有修改过的工作文件提交暂存区<br>git rm file # 从版本库中删除文件<br>git rm file --cached # 从版本库中删除文件，但不删除文件<br>git reset file # 从暂存区恢复到工作文件<br>git reset -- . # 从暂存区恢复到工作文件<br>git reset --hard # 恢复最近一次提交过的状态，即放弃上次提交后的所有本次修改<br>git ci file git ci . git ci -a # 将git add, git rm和git ci等操作都合并在一起做<br>git ci --amend # 修改最后一次提交记录<br>git revert $id # 恢复某次提交的状态，恢复动作本身也创建次提交对象<br>git revert HEAD # 恢复最后一次提交的状态"
       }, {
         "answer": "",
         "explanation": "<h3>查看文件diff</h3>",
@@ -29,12 +29,12 @@
         "answer": "2.Git 本地分支管理",
         "explanation": "<h3>查看、切换、创建和删除分支</h3>",
         "url": "",
-        "ImgExplanation": "git br -r # 查看远程分支<br>git br new_branch# 创建新的分支<br>git br - v# 查看各个分支最后提交信息<br>git br--merged# 查看已经被合并到当前分支的分支<br>git br--no - merged# 查看尚未被合并到当前分支的分支<br>git co branch# 切换到某个分支<br>git co - b new_branch# 创建新的分支， 并且切换过去<br>git co - b new_branch branch# 基于branch创建新的new_branch<br>git co $id# 把某次历史提交记录checkout出来， 但无分支信息， 切换到其他分支会自动删除<br>git co $id - b new_branch# 把某次历史提交记录checkout出来， 创建成一个分支<br>git br - d branch# 删除某个分支<br>git br - D branch# 强制删除某个分支(未被合并的分支被删除的时候需要强制)<br>"
+        "ImgExplanation": "git -r # 查看远程分支<br>git new_branch# 创建新的分支<br>git - v# 查看各个分支最后提交信息<br>git --merged# 查看已经被合并到当前分支的分支<br>git --no - merged# 查看尚未被合并到当前分支的分支<br>git checkout branch# 切换到某个分支<br>git checkout - b new_branch# 创建新的分支， 并且切换过去<br>git checkout - b new_branch branch# 基于branch创建新的new_branch<br>git checkout $id# 把某次历史提交记录checkout出来， 但无分支信息， 切换到其他分支会自动删除<br>git checkout $id - b new_branch# 把某次历史提交记录checkout出来， 创建成一个分支<br>git br - d branch# 删除某个分支<br>git br - D branch# 强制删除某个分支(未被合并的分支被删除的时候需要强制)<br>"
       }, {
         "answer": "",
         "explanation": "<h3>分支合并和rebase</h3>",
         "url": "",
-        "ImgExplanation": "git merge branch # 将branch分支合并到当前分支<br>git merge origin / master--no - ff# 不要Fast - Foward合并， 这样可以生成merge提交<br>git rebase master branch# 将master rebase到branch<br>相当于： git co branch && git rebase master && git co master && git merge branch"
+        "ImgExplanation": "git merge branch # 将branch分支合并到当前分支<br>git merge origin / master--no - ff# 不要Fast - Foward合并， 这样可以生成merge提交<br>git rebase master branch# 将master rebase到branch"
       }, {
         "answer": "",
         "explanation": "<h3>Git补丁管理(方便在多台机器上开发同步时用)</h3>",
@@ -49,7 +49,7 @@
         "answer": "",
         "explanation": "<h3>Git远程分支管理</h3>",
         "url": "",
-        "ImgExplanation": "git pull # 抓取远程仓库所有分支更新并合并到本地<br>git pull--no - ff# 抓取远程仓库所有分支更新并合并到本地， 不要快进合并<br>git fetch origin# 抓取远程仓库更新<br>git merge origin / master# 将远程主分支合并到本地当前分支<br>git co--track origin / branch# 跟踪某个远程分支创建相应的本地分支<br>git co - b local_branch origin / remote_branch# 基于远程分支创建本地分支， 功能同上<br>git push# push所有分支<br>git push origin master# 将本地主分支推到远程主分支<br>git push - u origin master# 将本地主分支推到远程(如无远程主分支则创建， 用于初始化远程仓库)<br>git push origin local_branch# 创建远程分支， origin是远程仓库名<br>git push origin local_branch: remote_branch# 创建远程分支<br>git push origin: remote_branch# 先删除本地分支(git br - d branch)， 然后再push删除远程分支 "
+        "ImgExplanation": "git pull # 抓取远程仓库所有分支更新并合并到本地<br>git pull--no - ff# 抓取远程仓库所有分支更新并合并到本地， 不要快进合并<br>git fetch origin# 抓取远程仓库更新<br>git merge origin / master# 将远程主分支合并到本地当前分支<br>git push# push所有分支<br>git push origin master# 将本地主分支推到远程主分支<br>git push - u origin master# 将本地主分支推到远程(如无远程主分支则创建， 用于初始化远程仓库)<br>git push origin local_branch# 创建远程分支， origin是远程仓库名<br>git push origin local_branch: remote_branch# 创建远程分支<br>git push origin: remote_branch# 先删除本地分支(git br - d branch)， 然后再push删除远程分支 "
       }, {
         "answer": "",
         "explanation": "<h3>Git远程仓库管理</h3>",
