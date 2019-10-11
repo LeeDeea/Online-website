@@ -6,7 +6,7 @@
 
 * 作品截图
 
-<p><img src="https://github.com/LeeDeea/Online-website/blob/master/ScreenshotsOfWorks.jpg" alt="blog" title="" /></p>
+<p><img src="https://leedeea.github.io/Online-website/static/mock/ScreenshotsOfWorks.jpg" alt="we can't find" title="" /></p>
 
 ---
 
